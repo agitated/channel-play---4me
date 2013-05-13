@@ -1,5 +1,5 @@
-$playHover: url("../images/sprite_icons.png") $color-brand no-repeat -37px -170px;
 
+$playHover: url("../images/sprite_icons.png") $color-button-hover no-repeat -37px -170px;
 
 .button{
 	@include border-radius(3px);
@@ -24,9 +24,9 @@ $playHover: url("../images/sprite_icons.png") $color-brand no-repeat -37px -170p
 .buttonArrow{
 	clear: both;
 	padding-right: em(40px);
-	background: url("../images/sprite_arrows.png") $color-button-bg 98% -373px no-repeat;
+	background: url("../images/sprite_arrows.png") $color-button-hover 98% -373px no-repeat;
 	&:hover{
-		background: url("../images/sprite_arrows.png") $color-brand 98% -470px no-repeat;
+		background: url("../images/sprite_arrows.png") $color-button-hover 98% -470px no-repeat;
 		@include ceaser-transition($easeOutQuart, background-color, 200ms);
 	}
 }
@@ -38,8 +38,6 @@ $playHover: url("../images/sprite_icons.png") $color-brand no-repeat -37px -170p
 	border: $color-button-border 2px solid;
 	background: rgba( 0, 0, 0,0.6 );
 	display:block;
-	float:left;
-	margin-right:em(10px);
 	&:hover{
 		border-color:#fff ;
 		@include ceaser-transition($easeOutQuart, background-color, 200ms);
@@ -53,20 +51,24 @@ $playHover: url("../images/sprite_icons.png") $color-brand no-repeat -37px -170p
 .favourite{	
 	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -96px;
 	 &:hover { 
-		 background: url("../images/sprite_icons.png") $color-brand no-repeat -37px -96px;
+		 background: url("../images/sprite_icons.png") rgba($color-button-hover,0.8) no-repeat -37px -96px;
 	}
 }
 
 .favourited{
-	background: url("../images/sprite_icons.png") $color-button-favourited no-repeat -37px -96px;
+	background: url("../images/sprite_icons.png") rgba($color-button-favourited,0.8) no-repeat -37px -96px;
 	border-color: #fff;
+   &:hover { 
+  	 background: url("../images/sprite_icons.png") $color-button-unfavourite no-repeat 2px -96px;
+     	border: $color-button-border 2px solid;
+  }
 }
 
 
 .share{
 	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -136px;
 	 &:hover{
-		background: url("../images/sprite_icons.png") $color-brand no-repeat -37px -132px; 
+		background: url("../images/sprite_icons.png") $color-button-hover no-repeat -37px -132px; 
 	}
 }
 
@@ -80,20 +82,20 @@ $playHover: url("../images/sprite_icons.png") $color-brand no-repeat -37px -170p
 .twitter{
 	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px 3px;
     &:hover{
-		background: url("../images/sprite_icons.png") $color-brand  no-repeat -37px 3px;
+		background: url("../images/sprite_icons.png") $color-button-hover  no-repeat -37px 3px;
 	}
 }
 
 .facebook{
 	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 3px -31px;
     &:hover{
-		background: url("../images/sprite_icons.png") $color-brand no-repeat -36px -31px;
+		background: url("../images/sprite_icons.png") $color-button-hover no-repeat -36px -31px;
 	}
 }
 
 .email{
 	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -63px;
     &:hover{
-		background: url("../images/sprite_icons.png") $color-brand no-repeat -37px -63px;
+		background: url("../images/sprite_icons.png") $color-button-hover no-repeat -37px -63px;
 	}
 }

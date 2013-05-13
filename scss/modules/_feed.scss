@@ -4,13 +4,16 @@
 	display:block;
 	margin-bottom:em(10px);
 	position:relative;
-	@include box-shadow(#e6e6e6 0px 0px 0px 2px);
+	@include box-shadow($color-boxshaddow 0px 0px 0px 2px);
 	@include box-sizing(border-box); 
 	overflow: hidden;
 	.play{
-		position: absolute;
-		bottom: -2px;
-		right: 2px;
+    position: absolute;
+    bottom: -2px;
+    right: 5px;
+    opacity:0;
+    filter:alpha(opacity=0); /* For IE8 and earlier */
+    
 	}
 
 	.thumb{
@@ -30,6 +33,7 @@
 	}
 	.thumbInfo{
 			padding-left: em(7px);
+      padding-right: em(7px);
 			bottom:em(7px);
 			position:absolute;
 			color:$color-copy-light;
@@ -37,9 +41,10 @@
 			display:inline-block;
 			width:100%;
 			z-index:11;
+      @include box-sizing(border-box);
 	}
 	.thumbTitle{
-		width:75%;
+		width:100%;
 	}
 	
 	.videoCount{
@@ -54,7 +59,7 @@
 			color: $color-copy-light;
 			@include border-radius(4px);
 	}
-	.videoHomeMetadata{
+	.videoHomeMetadata,.videoMetadata{
 		font-size:em(12px);
 	}
 	p{
@@ -73,7 +78,10 @@
 		.play{
 			background: $playHover;
 			border-color:#fff ;
-			@include ceaser-transition($easeOutQuart, background-color, 200ms);
+      opacity:1;
+      filter:alpha(opacity=100); /* For IE8 and earlier */
+			@include ceaser-transition($easeOutQuart, opacity, 200ms);
+     // display:block;
 		}
 	}
 	
@@ -187,4 +195,107 @@
 	}
 }
 
-
+//Favourites
+.favourites{
+  	overflow: visible;
+  	.button{display: none;}
+  	ul{
+  		width: 100%;
+  	}
+    .favourite,.favourited{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+    .tools{
+      padding:em(7px) em(7px) 0 ;
+      background-color:$color-thumb-tools-bg;
+      margin-top:em(-9px);
+      	@include box-shadow($color-boxshaddow 0px 0px 0px 2px);
+        @include border-radius(2px);
+      .favourite,.favourited{
+        float:right;
+        margin:0;
+      }
+      p{
+        font:{
+          size:em(12px);
+        }
+        color:$color-copy-button;
+        padding-top:em(10px);
+        float:left;
+        display:inline-block;
+      }
+    }
+  }
+  
+  //Favourites v2
+  .favourites-v2{
+    	overflow: visible;
+    	.button{display: none;}
+    	ul{
+    		width: 100%;
+        li{
+          margin-bottom:em(10px);
+        }
+    	}
+      .thumbInfo{
+        padding-left:5px;
+       
+    		
+        .thumbTitle{
+          width:100%;
+        }
+        .play{
+          opacity:0;
+        }
+      }
+      
+      .thumbSmall{
+        &:hover{
+      		.play{
+      			background: $playHover;
+      			border-color:#fff ;
+            opacity:1;
+      			@include ceaser-transition($easeOutQuart, opacity, 200ms);
+            
+      		}
+        }
+      }
+      
+      
+      .tools{
+        padding:em(7px) em(7px) 0 ;
+        background-color:$color-thumb-tools-bg;
+        margin-top:em(-9px);
+        	@include box-shadow($color-boxshaddow 0px 0px 0px 2px);
+          @include border-radius(2px);
+        .favourite,.favourited{
+          float:right;
+          margin:0;
+          @include ceaser-transition($easeOutQuart, background-color, 200ms);
+        }
+        p{
+          font:{
+            size:em(12px);
+          }
+          color:$color-copy-button;
+          padding-top:em(10px);
+          float:left;
+          color:#d6d6d6;
+        }
+        
+        &:hover{
+      		.favourited{
+      			 background: url("../images/sprite_icons.png") $color-button-unfavourite no-repeat -37px -96px;
+             	@include ceaser-transition($easeOutQuart, background-color, 200ms);
+      		}
+          p{
+            color:$color-button-unfavourite;
+            @include ceaser-transition($easeOutQuart, color, 200ms);
+            //opacity:1;
+          }
+        }
+      }
+    }
+  

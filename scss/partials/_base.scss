@@ -19,13 +19,17 @@ $color-brand:#379df4; //blue colour
 $color-onNextbg:#f5f5f5;
 $color-menu-dropdown:#3699ed;
 $color-divider:#e7e7e7;
+$color-boxshaddow:$color-divider;
 $color-mobileMenu-bg:#111619;
 $color-mobile-footer-btn:#111619;
 $color-button-border:#bfbfbf;
 $color-button-bg:#eee;
 $color-button-icon:rgba( 0, 0, 0,0.6 );
+$color-button-hover: rgba($color-brand,0.6);
 $color-button-touch:#5ecc9a;
 $color-button-favourited:$color-button-touch;
+$color-button-unfavourite:$color-button-touch /2;
+$color-thumb-tools-bg:$color-boxshaddow;
 $color-dots:#999fa5;
 $color-footer:#2a2d2f;
 $color-video-tools-bg:#0a2335;
@@ -41,7 +45,8 @@ $color-copy-menu:#999fa5;
 $color-copy-button:#8a8b8b;
 $color-copy-light:#fff;
 $color-copy-dropdown:#d8edff;
-$textShadow: rgba( 0, 0, 0,0.1) 0px 1px 2px;
+$color-copy-thumb-tool:$color-copy-button;
+$textShadow: rgba( 0, 0, 0,0.2) 0px 1px 2px;
 
 /* !----  measurement ---- */
 $vSpace:em(20px);
@@ -52,6 +57,8 @@ $smlThumbWidth:218px;
 $smlThumbHeight:122px;
 $lrgThumbWidth:446px;
 $lrgThumbHeight:255px;
+$xsmlThumbWeight:$smlThumbWidth/2;
+$xsmlThumbHeight: $smlThumbHeight/2; 
 
 // Breakpoints for mixin
 $break-xsmall: 360px;

@@ -195,6 +195,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/favourites.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/favourites.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/images\/m_icon_search_input.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -330,16 +339,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/hero_bottom_arrow.png" : {
+    "\/scss\/modules\/_favourites.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
-      "initialSize" : 1378,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/scss\/modules\/_favourites.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_favourites.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/scss\/partials\/_globals.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -375,6 +385,17 @@
       "outputAbbreviatedPath" : "\/css\/_easing-functions.css",
       "fileType" : 2,
       "debugStyle" : 0
+    },
+    "\/images\/hero_bottom_arrow.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
+      "initialSize" : 1378,
+      "fileType" : 8192
     },
     "\/scss\/modules\/_menu.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -412,18 +433,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/scss\/modules\/_breadcrumb.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/modules\/_breadcrumb.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_breadcrumb.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/scss\/style.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -433,6 +442,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/style.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/scss\/modules\/_breadcrumb.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/modules\/_breadcrumb.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_breadcrumb.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -628,15 +649,6 @@
       "initialSize" : 2385,
       "fileType" : 8192
     },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/scss\/modules\/_footer.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -660,6 +672,15 @@
       "outputAbbreviatedPath" : "\/css\/_background.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
     },
     "\/images\/img_thumb4.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -859,6 +880,28 @@
       "initialSize" : 9136,
       "fileType" : 4096
     },
+    "\/js\/jquery-1.9.1.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery-1.9.1.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery-1.9.1.min-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/logo.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/logo.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/images\/logo.png",
+      "initialSize" : 5288,
+      "fileType" : 8192
+    },
     "\/scss\/vendor\/susy\/_settings.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -882,28 +925,6 @@
       "initialSize" : 52217,
       "fileType" : 4096
     },
-    "\/images\/logo.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/logo.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/logo.png",
-      "initialSize" : 5288,
-      "fileType" : 8192
-    },
-    "\/js\/jquery-1.9.1.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery-1.9.1.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery-1.9.1.min-ck.js",
-      "fileType" : 64
-    },
     "\/images\/mobile_feedcutoff.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -914,15 +935,6 @@
       "outputAbbreviatedPath" : "\/images\/mobile_feedcutoff.png",
       "initialSize" : 8129,
       "fileType" : 8192
-    },
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
     },
     "\/scss\/modules\/_hero-series.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -935,6 +947,15 @@
       "outputAbbreviatedPath" : "\/css\/_hero-series.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/scss\/vendor\/ceaser-easing\/_ceaser.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -957,6 +978,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/favourites-v2.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/favourites-v2.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/scss\/vendor\/susy\/_isolation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -968,6 +998,17 @@
       "outputAbbreviatedPath" : "\/css\/_isolation.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/images\/cat_business.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/cat_business.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/images\/cat_business.jpg",
+      "initialSize" : 9136,
+      "fileType" : 4096
     },
     "\/scss\/vendor\/_susy.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -990,17 +1031,6 @@
       "processed" : 1,
       "outputAbbreviatedPath" : "\/images\/cat_finance.jpg",
       "initialSize" : 9848,
-      "fileType" : 4096
-    },
-    "\/images\/cat_business.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/cat_business.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/cat_business.jpg",
-      "initialSize" : 9136,
       "fileType" : 4096
     },
     "\/scss\/modules\/_search.scss" : {

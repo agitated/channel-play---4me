@@ -103,6 +103,11 @@
 		display: inline-block;
 		width:em(405px);
 		@include border-radius(6px);
+
+      a{
+        float:left;
+        margin-right:em(10px);
+      }
 		h4{
 			margin-right: $hSpace;
 			float: left;
