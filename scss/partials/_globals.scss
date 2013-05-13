@@ -1,0 +1,112 @@
+/* !----  globals ---- */
+body{
+	background: url("../images/background.png") $color-bg repeat left top;
+	color:#333;
+	font:{
+		family: $bodyFont;
+		size: $base-font-size;
+		weight:400;
+	}
+	line-height:em(22px)
+}
+
+.wrapper{
+	margin:0 auto;
+	display:block;
+	@include box-sizing(border-box); 
+}
+
+h1{
+	font:{
+		family: $headerFont;
+		size: em(40px);
+		weight:300;
+	}
+	line-height:em(20px);
+	color: $color-copy-light;
+	padding:0;
+	display:inline-block;
+	@include text-shadow($textShadow);
+}
+
+h2{
+	font:{
+		family: $headerFont;
+		size: em(30px);
+		weight:300;
+	}
+	color:$color-copy-h2;
+	padding:em(4px) 0 0;
+	margin-bottom:em(15px);
+	display:inline-block;
+}
+h3{
+	font:{
+		family: $headerFont;
+		size: em(24px);
+		weight:300;
+	}
+	color:$color-copy-default;
+	padding:em(5px) 0 0;
+	margin-bottom:em(10px);
+}
+p{
+	font:{
+		family: $bodyFont;
+		size: em(15px);
+		weight:400;
+	}
+	line-height:em(22px);
+	margin:0 0 $vSpace;
+}
+
+a{
+	border-bottom: $color-copy-link 1px solid;
+	text-decoration:none;
+	color:$color-copy-default;
+	&:hover { 
+		background:$color-copy-link;
+		color: $color-copy-light;
+		@include ceaser-transition($easeOutQuart, background-color, 200ms); 
+	}
+}
+.genericHeader{
+	.information{
+		width:80%;
+	}
+	p{
+		color: $color-copy-light;
+		@include text-shadow($textShadow);
+	}
+}
+.right{
+	float:right;
+}
+
+.left{
+	float:left;
+}
+
+.clear{
+	clear:both;
+}
+
+/**clearfix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+

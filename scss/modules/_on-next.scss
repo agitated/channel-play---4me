@@ -1,0 +1,81 @@
+
+.onNextArrow{
+	height:em(40px);
+	width:200%;
+	background: url("../images/next_bottom_arrow.png") transparent no-repeat left 1px;
+	clear:both;
+	z-index:8;
+	position:relative;
+	left: em(-40px);
+}
+
+
+.epgTime{
+	position: absolute;
+	top: em(155px);
+	padding-top: 10px;
+	display: block;
+	font-size:em(12px);
+	color:$color-copy-menu;
+	background: url("../images/epg_line.gif") transparent no-repeat left 0;
+}
+
+#epg{
+	//padding-bottom:30px;
+	display: block;
+	position: relative;
+
+	.rightArrow{
+		top:-7px;
+	}
+	
+	ul{
+		li{
+			.thumbSmall{
+				&:hover{
+					border:2px #fff solid;
+					@include box-shadow(#e6e6e6 0px 0px 0px 2px);
+				}
+			}
+		}
+	}
+}
+
+.epgPagination{
+	width:100%;
+	position:relative;
+	clear: both;
+	display:none;
+	ul{
+		list-style: none;
+		padding: em(5px);
+		display: block;
+		text-align: center;
+		position:relative;
+		left:50%;
+		float:left;
+		clear:left;
+		li{
+			float: left;
+			margin-right: $vSpace;
+			display: block;
+			right:50%;
+			a{
+				width: $hSpace;
+				height: $hSpace;
+				background-color: transparent;
+				@include border-radius($hSpace);
+				border:2px $color-dots solid;
+				display:block;
+				&:hover{
+					background-color: $color-dots;
+				}
+			}
+			
+			.selected{
+				background-color: $color-dots;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,40 @@
+/* !------- CATEGORY HERO -------*/
+.categoryHeroBg{
+	z-index: 0;
+	position: absolute;
+	max-width: 100%;
+	width: 100%;
+	top:0;
+	right: 0;
+}
+
+.categoryInformation{
+	padding-top: em(200px);
+	z-index: 20;
+	position: relative;
+	color: $color-copy-light;
+	padding-bottom: $hSpace;
+	padding-right: $hSpace;
+	@include box-sizing(border-box);
+	width:60%;
+	
+	h1{
+		@include text-shadow($textShadow);
+		color: $color-copy-light;
+	}
+	p{
+		@include text-shadow($textShadow);
+		@include box-sizing(border-box);
+		color: $color-copy-light;
+	}
+}
+
+.heroCategoryArrow{
+	height:em(13px);
+	width:200%;
+	background: url("../images/hero_bottom_arrow.png") transparent no-repeat left 1px;
+	clear:both;
+	z-index:8;
+	position:relative;
+	left: em(-40px);
+}

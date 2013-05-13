@@ -1,0 +1,61 @@
+/* convert px to em*/
+@function em($target, $context: $base-font-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+/* gradient with hover */
+@mixin gradient-hover($pos, $defaultColor, $hoverColor){
+  @include background(linear-gradient($pos,hsla(0,0%,100%,.1)0%, hsla(0,0%,100%,0)100%),$defaultColor);
+  &:hover{
+    @include background(linear-gradient($pos,hsla(0,0%,0%,.2)0%, hsla(0,0%,0%,0)130%),$hoverColor);
+    @include ceaser-transition($easeInCubic, all, 300ms)
+  }
+}
+
+@mixin addBlur{
+  $bAmount:12px;
+  $brAmount:0.9;
+  opacity: .9;
+  filter: blur($bAmount); 
+  -webkit-filter: blur($bAmount); 
+  -moz-filter: blur($bAmount);
+  -o-filter: blur($bAmount); 
+  -ms-filter: blur($bAmount);
+  filter: url(../images/blur.svg#blur);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='12');
+}
+
+@mixin removeBlur{
+  filter: none; 
+  opacity: 1;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); 
+}
+
+@mixin breakpoint($media) {
+   @if $media == xxsml {
+    @media only screen and (max-width: $break-xsmall) { @content; }
+  } 
+ @else if  $media == xsml {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if  $media == sml {
+    @media only screen and (max-width: $break-med) { @content; }
+  }
+  @else if $media == med {
+    @media only screen and (min-width: $break-med + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == lrg {
+    @media only screen and (min-width: $break-large) and (max-width: $break-xlarge - 1) { @content; }
+  }
+  @else if $media == xlrg{
+    @media only screen and (min-width: $break-xlarge) { @content; }
+  } @else {
+        @media only screen and (max-width: $media) { @content; }
+  }
+
+}

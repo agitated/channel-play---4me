@@ -1,0 +1,274 @@
+
+/*  !--------- MENU ---------  */
+#menu{
+	.logo{
+		background: url("../images/menu_divider.png") transparent no-repeat right 12px;
+		padding:10px 15px 5px 5px;	
+		margin:0;
+		display:inline-block;
+	}
+
+	@include background(linear-gradient(90deg, rgb( 18, 25, 30 ) 0%, rgb( 32, 44, 53 ) 100%));
+	background-color: #202c36;
+	padding: 0 em(10px);
+	@include box-shadow(rgba( 0, 0, 0,0.7 ) 0px 0px 3px);
+	z-index: 100;
+	position: relative;
+	
+	a{border: none;
+	}
+
+}
+
+#searchMenu{
+    position: relative;
+    float:right;
+    width: 35%;
+    margin: 0;
+    padding:em(10px);
+	input[type="text"] {
+	    width: 85%;
+	    padding: em(7px) 0 0 $hSpace;
+	    color: $color-copy-light;
+	    outline: none;
+    	border-width: 0;
+   		background: transparent;
+   		font:{
+   			size:em(13px);
+   			family:$bodyFont;
+   			weight:400;
+   		}
+	}
+	button {
+	    height: 30px;
+	    width: 30px;
+	    padding-top:5px;
+	    background-color: transparent;
+	    cursor: pointer;
+	    float:right;
+	    border:none;
+		background: url("../images/icon_search.png") transparent no-repeat center 5px;
+		
+	}
+	form {
+	    height: 30px;
+	    border: 1px solid #000;
+	    @include border-radius(6px);
+	    background-color: #525d63;
+	    overflow: hidden;
+	    @include box-shadow(rgba( 0, 0, 0 ,0.3) 2px 2px 1px inset);
+	}
+}
+
+
+.menuItems{
+	display: inline-block;
+	margin:0;
+	padding:0;
+	list-style:none;
+	@include box-sizing(border-box); 
+	li{
+		a{
+			font:{
+				size:em(13px);
+				family: $headerFont;
+				weight:700;
+			}
+			color:$color-copy-menu;
+			text-decoration: none;
+			background: url("../images/sprite_arrows.png") transparent no-repeat 92% 5px;
+			padding:em(5px) em(40px) em(12px) em(15px);
+			display:inline-block;
+			border:none;		
+		}	
+		float:left;
+		text-transform:uppercase;
+		display:inline-block;
+		padding: 0;
+		background: url("../images/menu_divider.png") transparent no-repeat right 0;
+		@include box-sizing(border-box); 
+		&:hover > ul {
+			display: block;
+		}
+		&:hover{
+			a{
+				@include border-radius(4px 4px 0 0);
+				color:$color-copy-light;
+				@include background(url("../images/sprite_arrows.png")  92% -92px no-repeat,
+                 linear-gradient(bottom, rgb( 55, 157, 244 ) 0%, rgb( 31, 43, 53 ) 100%));
+				@include ceaser-transition($easeOutQuart, linear-gradient, 200ms)
+			}
+		}
+	}
+}
+
+.dropDown{
+	@include border-radius(0 6px 6px 6px );
+	background-color:$color-menu-dropdown;
+	display:block;
+	float:left;
+	padding:em(15px) em(15px) 0 em(15px);
+	position:absolute;
+	min-width:200px;
+	margin:0;
+	display:none;
+	@include box-shadow(rgba( 0, 0, 0,0.4 ) 3px 3px 3px);
+	li{
+		float:left;
+		background:transparent;
+		text-transform:uppercase;
+		display:block;
+		padding:0;
+		margin-bottom:5px;
+		> ul{
+			margin:0 30px 0 0;
+			padding:0;
+			width:150px;
+		}
+
+		> ul li{
+			clear:both;
+			float:none;
+		}
+		font:{
+			size:em(15px);
+		}
+		a{
+			
+			background:none !important;
+			padding:0;
+			margin:0;
+			width:100%;
+			&:hover{
+				color:#333;
+			}
+		}
+	}
+}
+
+/*  !--------- MOBILE MENU ---------  */
+#mobileMenu{
+	display:none;
+	text-align: center;
+	@include background(linear-gradient(90deg, rgb( 18, 25, 30 ) 0%, rgb( 32, 44, 53 ) 100%));
+	background-color: #202c36;
+	@include box-shadow(rgba( 0, 0, 0,0.7 ) 0px 0px 3px);
+	z-index: 40;
+	position: relative;
+	width:100%;
+	padding:0;
+	a{
+		border-bottom: none;
+	}
+	.logo{
+		display: inline-block;
+		padding-top: $hSpace;
+		border: none;
+		&:hover{
+			background: transparent;
+		}
+	}
+	
+}
+.mMenu,.mSearch{
+	height: 55px;
+	width:55px;
+	float:left;
+	position:relative;
+	display: inline-block;
+	border-bottom: none;
+}
+.mMenu{
+	background: url("../images/sprite_mobile_menu.png") transparent no-repeat center 8px;
+	&:hover{
+		background: url("../images/sprite_mobile_menu.png") $color-brand no-repeat center -79px;
+	}
+	float:left;
+}
+.mSearch{
+	background: url("../images/sprite_mobile_menu.png") transparent no-repeat center -30px;
+	&:hover{
+		background: url("../images/sprite_mobile_menu.png") $color-brand no-repeat center -125px;
+	}
+	float:right;
+}
+.expandedMenu{
+	list-style: none;
+	padding: em(2px) 0;
+	background-color:$color-mobileMenu-bg;
+	margin:em(10px) 0 0;
+	@include box-shadow(rgba( 0, 0, 0 ,0.3) 0px 3px 10px inset);
+	display:none;
+	clear:both;
+	border-bottom: 2px #000 solid;
+	li{
+		display:block;
+		text-align: left;
+		border-top:1px $color-copy-default solid;
+		margin: 0 em(15px);
+		a{
+			text-align: left;
+			color:$color-copy-light;
+			border:0;
+			padding: em(7px) em(2px);
+			display: block;
+			font:{
+				size:em(13px)
+			}
+			text-transform:uppercase;
+		}
+	}
+	li:first-child{
+		border-top:none;
+	}
+}
+
+.mMenuSelected{
+	background: url("../images/sprite_mobile_menu.png") $color-mobileMenu-bg no-repeat center -79px;
+}
+
+.mSearchSelected{
+	background: url("../images/sprite_mobile_menu.png") $color-mobileMenu-bg no-repeat center -125px;
+}
+.mSearchForm{
+    position: relative;
+    float:left;
+    width: 100%;
+    margin: 0;
+    padding:em(13px);
+    background-color:$color-mobileMenu-bg;
+    display:none;
+	input[type="text"] {
+	    width: 85%;
+	    padding: em(7px) 0 0 $hSpace;
+	    color: $color-copy-light;
+	    outline: none;
+    	border-width: 0;
+   		background: transparent;
+   		float:left;
+   		font:{
+   			size:em(13px);
+   			family:$bodyFont;
+   			weight:400;
+   		}
+	}
+	button {
+	    height: 30px;
+	    width: 30px;
+	    padding-top:5px;
+	    background-color: transparent;
+	    cursor: pointer;
+	    float:right;
+	    border:none;
+		background: url("../images/m_icon_search_input.png") transparent no-repeat center 3px;
+	}
+	form {
+	    height: 30px;
+	    border: 1px solid #000;
+	    @include border-radius(6px);
+	    background-color: #525d63;
+	    overflow: hidden;
+	    @include box-shadow(rgba( 0, 0, 0 ,0.3) 2px 2px 1px inset);
+	    width:94%;
+	}
+}

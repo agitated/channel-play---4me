@@ -1,0 +1,69 @@
+@import "compass/css3";
+
+//partials
+@import "partials/normalize";
+@import "partials/mixins";
+
+
+/* !---- variables ---- */
+
+/* !----  fonts ---- */
+$headerFont:'Titillium Web', sans-serif;
+$bodyFont: 'Noto Sans', sans-serif;
+$base-font-size: 15px;
+
+/* !---- color ---- */
+//elements
+$color-bg:#f8f7f7;
+$color-brand:#379df4; //blue colour
+$color-onNextbg:#f5f5f5;
+$color-menu-dropdown:#3699ed;
+$color-divider:#e7e7e7;
+$color-mobileMenu-bg:#111619;
+$color-mobile-footer-btn:#111619;
+$color-button-border:#bfbfbf;
+$color-button-bg:#eee;
+$color-button-icon:rgba( 0, 0, 0,0.6 );
+$color-button-touch:#5ecc9a;
+$color-button-favourited:$color-button-touch;
+$color-dots:#999fa5;
+$color-footer:#2a2d2f;
+$color-video-tools-bg:#0a2335;
+
+
+//copy
+$color-copy-link:$color-brand;
+$color-copy-breakcrumb:#fff;
+$color-copy-h2:#68b5f7;
+$color-copy-socialHeader:#3085cc;
+$color-copy-default:#2a3a46;
+$color-copy-menu:#999fa5;
+$color-copy-button:#8a8b8b;
+$color-copy-light:#fff;
+$color-copy-dropdown:#d8edff;
+$textShadow: rgba( 0, 0, 0,0.1) 0px 1px 2px;
+
+/* !----  measurement ---- */
+$vSpace:em(20px);
+$hSpace:em(10px);
+
+// use for desktop thumbs
+$smlThumbWidth:218px;
+$smlThumbHeight:122px;
+$lrgThumbWidth:446px;
+$lrgThumbHeight:255px;
+
+// Breakpoints for mixin
+$break-xsmall: 360px;
+$break-small: 480px;
+$break-med: 720px;
+$break-large: 955px;
+$break-xlarge: 1180px;
+
+
+// Setting up the Magic Grid for Susy
+$total-columns: 12; // 12 columns
+$column-width: em(70px); // columns are 4em wide
+$gutter-width: em(15px); // with 1em gutters
+$grid-padding: em(15px); // and 1em padding on the grid container
+$container-width: 100%;

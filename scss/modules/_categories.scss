@@ -1,0 +1,101 @@
+
+#categories{
+	position:relative;
+	left:0;
+	display:none;
+	vertical-align:middle;
+	padding:em(15px) em(10px);
+	margin:0 em(-15px) $hSpace em(-15px);
+	background: url("../images/bg_categories.gif") transparent repeat left top;
+	@include box-sizing(border-box); 
+}
+
+.showCategories{
+	@include background(url("../images/sprite_arrows.png") 92% 9px no-repeat,
+    linear-gradient(top, rgb( 41, 57, 69 ) 0%, rgb( 33, 45, 54 ) 100%),#000);
+	padding:em(10px) em(45px) em(10px) $vSpace;
+	margin-left:em(15px);
+	position:absolute;
+	width:200px;
+	&:hover{
+		background: url("../images/sprite_arrows.png") $color-brand 92% -87px no-repeat;
+		@include ceaser-transition($easeOutQuint, background-color, 400ms);
+	}
+}
+
+.hideCategories{
+	@include background(rl("../images/sprite_arrows.png") 92% -192px no-repeat,
+    linear-gradient(top, rgb( 41, 57, 69 ) 0%, rgb( 33, 45, 54 ) 100%));
+	padding:em(10px) em(45px) em(40px) $vSpace;
+	margin-left:em(15px);
+	width:200px;
+	position:absolute;
+	&:hover{
+		@include background( url("../images/sprite_arrows.png") 92% -282px no-repeat,
+          linear-gradient(top, rgb( 55, 157, 244 ) 0%, rgb( 31, 43, 53 ) 80%));
+	}
+}
+
+.categoriesGrid{
+	list-style:none;
+	@include container;
+	li{
+		img{
+			position:absolute;
+			top:0;
+			left:-15%;
+			z-index:30;
+			opacity: .6;
+		}
+	}
+}
+
+.categoriesBlock{
+	text-transform:uppercase;
+	height:90px;
+	text-align:center;
+	@include box-sizing(border-box); 
+	margin-bottom:$hSpace;
+	margin-right:1.19% !important;
+	position:relative;
+	overflow:hidden;
+	a{
+		font:{
+			family:$headerFont;
+			size:em(16px);
+		}
+		color:$color-copy-light;
+		@include text-shadow($textShadow);
+		width:100%;
+		display:block;
+		position:relative;
+		z-index:31;
+		line-height:90px;
+	}	
+}
+
+.blockLarge{
+	@include span-columns(3);
+}
+
+.blockSmall{
+	@include span-columns(2);
+}
+
+.red{
+	border-top:1px rgba(#c95c5c,0.8) solid;
+	border-bottom:none;
+	@include gradient-hover(bottom,#b82a2a,#c90d0d);
+	
+}
+.blue{
+	border-top:1px rgba(#5582c8,0.8) solid;
+	border-bottom:none;
+	@include gradient-hover(bottom,#2e5fae,#4274c3);
+}
+.image{
+	border-top:1px rgba(#ccc,0.3 ) solid;
+	border-bottom:none;
+	//@include background(linear-gradient(bottom,hsla(0,0%,0%,.2)40%, hsla(0,0%,100%,0)100%));
+	@include gradient-hover(bottom,transparent,rgba(#2e5fae,0.2));
+}

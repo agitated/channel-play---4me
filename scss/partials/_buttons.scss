@@ -1,0 +1,99 @@
+$playHover: url("../images/sprite_icons.png") $color-brand no-repeat -37px -170px;
+
+
+.button{
+	@include border-radius(3px);
+	background:transparent;
+	@include box-shadow(rgba( 0, 0, 0,0.1 ) 0px 0px 1px 1px);
+	@include box-sizing(border-box); 
+	padding: $hSpace em(15px);
+	color:$color-copy-button;
+	border:none;
+	display:inline-block;
+	text-transform: uppercase;
+	font:{
+		size:em(14px);
+		family:$headerFont;
+		weight:700;
+	}
+	&:hover{
+		@include ceaser-transition($easeOutQuart, background-color, 200ms);
+	}
+}
+
+.buttonArrow{
+	clear: both;
+	padding-right: em(40px);
+	background: url("../images/sprite_arrows.png") $color-button-bg 98% -373px no-repeat;
+	&:hover{
+		background: url("../images/sprite_arrows.png") $color-brand 98% -470px no-repeat;
+		@include ceaser-transition($easeOutQuart, background-color, 200ms);
+	}
+}
+
+.buttonIcon{
+	@include border-radius(8px);
+	width: em(36px);
+	height: em(32px);
+	border: $color-button-border 2px solid;
+	background: rgba( 0, 0, 0,0.6 );
+	display:block;
+	float:left;
+	margin-right:em(10px);
+	&:hover{
+		border-color:#fff ;
+		@include ceaser-transition($easeOutQuart, background-color, 200ms);
+	}
+	&:active{
+		background-color: $color-button-touch;
+		border-color: #fff;
+	}
+}
+
+.favourite{	
+	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -96px;
+	 &:hover { 
+		 background: url("../images/sprite_icons.png") $color-brand no-repeat -37px -96px;
+	}
+}
+
+.favourited{
+	background: url("../images/sprite_icons.png") $color-button-favourited no-repeat -37px -96px;
+	border-color: #fff;
+}
+
+
+.share{
+	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -136px;
+	 &:hover{
+		background: url("../images/sprite_icons.png") $color-brand no-repeat -37px -132px; 
+	}
+}
+
+.play{
+	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -170px;
+	&:hover{
+		background: $playHover;
+	}
+}
+
+.twitter{
+	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px 3px;
+    &:hover{
+		background: url("../images/sprite_icons.png") $color-brand  no-repeat -37px 3px;
+	}
+}
+
+.facebook{
+	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 3px -31px;
+    &:hover{
+		background: url("../images/sprite_icons.png") $color-brand no-repeat -36px -31px;
+	}
+}
+
+.email{
+	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -63px;
+    &:hover{
+		background: url("../images/sprite_icons.png") $color-brand no-repeat -37px -63px;
+	}
+}

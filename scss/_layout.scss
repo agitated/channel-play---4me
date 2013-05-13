@@ -1,0 +1,52 @@
+/*  !----- hero-----  */
+.hero{
+	display:block;
+	overflow: hidden;
+	padding: em(20px) em(20px) 0;
+	position: relative;
+    background-color: black;
+    @include box-sizing(border-box);
+}
+
+
+/*   !------- ON NEXT ------- */
+.onNext{
+	display:block;
+	overflow: hidden;
+	padding: em(20px) em(15px) 0 ;
+	position: relative;
+	background:$color-onNextbg;
+}
+
+
+
+/* !-------ON DEMAND------- */
+.onDemand{
+	display:block;
+	padding: em(15px) em(15px) 0 em(15px) ;
+	position: relative;
+	h3{
+		text-transform: uppercase;
+	}
+}
+
+
+//Global
+.genericHeader{
+	display:block;
+	padding: em(20px) em(20px) em(40px);
+	position: relative;
+    background-color: black;
+    @include box-sizing(border-box);
+    background: url("../images/bg_header.jpg") #000 no-repeat left bottom;
+}
+
+
+footer{
+	padding: 0 $vSpace $vSpace;
+	background-color: $color-footer;
+	color:$color-copy-menu;
+	overflow: hidden;
+	background: url("../images/bg_footer.jpg") #000 no-repeat center top;
+	
+}

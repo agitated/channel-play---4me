@@ -1,0 +1,137 @@
+/* !------- FOOTER ------- */
+
+footer{
+	.section{
+		float:left;
+		width: 18%;
+		h3{
+			font:{
+				size:em(14px);
+				weight:700;
+				family:$headerFont;
+			}
+			color:$color-copy-light;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			font:{
+				size:em(12px);
+				family:$bodyFont;
+			}
+			li{
+				margin-bottom: em(5px);
+				a{
+					color:$color-copy-menu;
+					border: 0;
+					&:hover{
+						background: transparent;
+						border-bottom: $color-copy-link 1px solid;
+					}
+				}
+			}
+		}
+	}
+	.socialSection{
+		width:13%;
+		.twitterItem{
+			padding-left: em(25px);
+			background: url("../images/sml_sprite_social_icons.png") transparent no-repeat -5px -1px;
+			&:hover{
+				background: url("../images/sml_sprite_social_icons.png") transparent no-repeat -5px -27px;
+			}
+		}
+		.facebookItem{
+			padding-left: em(25px);
+			background: url("../images/sml_sprite_social_icons.png") transparent no-repeat -5px -53px;
+			&:hover{
+				background: url("../images/sml_sprite_social_icons.png") transparent no-repeat -5px -79px;
+			}
+		}
+		.mailItem{
+			padding-left: em(25px);
+			background: url("../images/sml_sprite_social_icons.png") transparent no-repeat -5px -103px;
+			&:hover{
+				background: url("../images/sml_sprite_social_icons.png") transparent no-repeat -5px -130px;
+			}
+		}
+	}
+	.channels{
+		width: 50%;
+		ul{
+			
+			li{
+				float: left;
+				margin-right: 4%;
+				width:29%;
+			}
+		}
+	}
+	.mobInfo{
+		display: none;
+		@include box-sizing(border-box); 
+		color: $color-copy-light;
+		margin-top: $hSpace;
+		.buttonArrow{
+				clear: both;
+				padding-right: em(40px);
+				background: url("../images/sprite_arrows.png") $color-mobile-footer-btn  98% -373px no-repeat;
+				margin-bottom: em(15px);
+		}
+		h3{
+		display: block;
+		float: none;
+		margin-right: $vSpace;
+				font:{
+					size:em(16px);
+					weight:700;
+					family:$headerFont;
+				}
+				color:$color-copy-light;
+			}
+	}
+	.siteInfo{
+		clear: both;
+		padding-top: $vSpace;
+		p{
+			color: $color-copy-light;
+		}
+	}
+	.footerSocial{
+		float:right;
+		margin-bottom: $vSpace;
+		h3{
+			display: inline-block;
+			float: left;
+			margin-right: $vSpace;
+					font:{
+						size:em(16px);
+						weight:700;
+						family:$headerFont;
+					}
+					color:$color-copy-light;
+				}
+		p{
+			margin-right: em(5px);
+			margin-top: em(10px);
+		}
+		a{
+			margin-left: em(5px);
+			float:left;
+		}
+	}
+}
+
+.footerArrow{
+	height:em(20px);
+	width:200%;
+	background:url("../images/arrow_footer.png") transparent no-repeat 0 0;
+	clear:both;
+	padding:0;
+	position:relative;
+	left: em(-40px);
+}
+
+
+

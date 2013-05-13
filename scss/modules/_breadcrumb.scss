@@ -1,0 +1,30 @@
+.breadCrumb{
+	clear: both;
+	display: block;
+	position: relative;
+	margin-bottom: $vSpace;
+	z-index: 16;
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li{
+				float: left;
+				background: url("../images/sprite_arrows.png") transparent 98% -477px no-repeat;
+				padding-right: em(25px);
+				@include text-shadow($textShadow);
+				a{
+					color: $color-copy-breakcrumb;
+					&:hover{
+						color: $color-copy-light;
+					}
+				}
+			}
+		}
+		
+		.currentPage{
+			color:$color-copy-light;
+			background: transparent;
+			@include text-shadow($textShadow);
+		}
+}

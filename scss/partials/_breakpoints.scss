@@ -1,0 +1,875 @@
+/* Breakpoints for mixin
+$break-xsmall: 360px;
+$break-small: 480px;
+$break-med: 720px;
+$break-large: 955px;
+$break-xlarge: 1180px;*/
+
+
+/*   !----  $break-xlarge ----   */
+@include breakpoint(xlrg) 
+{
+	.wrapper{
+		max-width: 1185px;
+		border-left:1px rgba( 0, 0, 0,0.1) solid;
+		border-right:1px rgba( 0, 0, 0,0.1) solid;
+  		@include box-shadow(rgba( 0, 0, 0,0.1) 0px -1px 20px);
+  		@include box-sizing(border-box); 
+  	}
+	.hero{
+		max-width: 100%;	
+	}
+	.heroHomeBg,.heroSeriesBg{
+		height: 132%;
+	    max-height: 132%;
+	    max-width: none;
+	    width: auto;
+	    right:-2%;
+		@include addBlur;
+	}
+	.categoryHeroBg{
+		height: 102%;
+	    max-height: 102%;
+	    max-width: none;
+	    width: auto;
+	}
+	.heroVideoBg{
+		height: 102%;
+	    max-height: 102%;
+	    max-width: none;
+	    width: auto;
+	    right:-2%;
+		@include addBlur;
+	}
+	.videoHome,.videoSeries{
+		object,.BrightcoveExperience{
+		width:704px;
+		height:396px;
+		}
+	}
+	#menu{
+		@include border-radius(4px);
+		margin-bottom:$vSpace;
+	}
+	#searchMenu{
+		input[type="text"] {
+		    width: 85%;
+		}
+	}
+	.onNow{
+		p{
+			margin: 0 0 em(15px);
+		}
+		.buttons{
+		margin-left:em(18px)
+		}
+		.play{
+			display: none;
+		}
+	}
+	.seriesInformation{
+		p{
+			margin: 0 0 em(15px);
+		}
+		.buttons{
+		margin-left:em(18px)
+		}
+		.play{
+			display: none;
+		}
+	}
+
+	.rightArrow{
+			width:94px;
+			height:90%;
+			top:30px;
+			background: url("../images/arrow_feedright.png") transparent no-repeat 0 50%;
+			&:hover{background: url("../images/arrow_feedright.png") transparent no-repeat -94px 50%;}
+	}
+	.videoInformation{
+		.details{
+			p{
+				padding-right: em(170px);
+			}
+			h1{
+				padding-right: em(220px);
+			}
+		}
+	}
+	
+	footer{
+		.channels{
+			width: 50%;
+			ul{
+				
+				li{
+					float: left;
+					margin-right: 4%;
+					width:25%;
+				}
+			}
+		}
+		.mobInfo{
+			display: none;
+		}
+	}
+	
+	
+}
+
+/*  !---- $break-large ---- */	
+@include breakpoint(lrg) 
+{
+	#menu{
+		@include border-radius(4px);
+		margin-bottom:$vSpace;
+	}
+	#searchMenu{
+		input[type="text"] {
+		    width: 80%;
+		}
+	}
+	.heroHomeBg,.heroSeriesBg{
+		height: 132%;
+	    max-height: 132%;
+	    max-width: none;
+	    width: auto;
+	    right:-2%;
+		@include addBlur;
+	}
+	
+	.categoryHeroBg{
+		height: 102%;
+	    max-height: 102%;
+	    max-width: none;
+	    width: auto;
+	}
+	
+	.heroVideoBg{
+		height: 102%;
+	    max-height: 102%;
+	    max-width: none;
+	    width: auto;
+	    right:-2%;
+		@include addBlur;
+	}
+	.videoHome,.videoSeries{
+		object, .BrightcoveExperience{
+		width:640px;
+		height:360px;
+		}
+	}
+	
+	.onNow{
+		h3{
+			margin:em(5px) 0 em(7px)0 ;
+			font-size: em(25px);
+			padding:0 em(10px);
+		}
+		p{
+			padding:0 em(5px) 0 em(20px);
+			margin: 0 0 em(10px);
+		}
+
+		.buttons{
+			margin-left:em(20px)
+		}
+		.play{
+			display: none;
+		}
+	}
+	
+	.seriesInformation{
+		h3{
+			margin:em(5px) 0 em(7px)0 ;
+			font-size: em(25px);
+			padding:0 em(10px);
+		}
+		p{
+			padding:0 em(5px) 0 em(20px);
+			margin: 0 0 em(10px);
+		}
+
+		.buttons{
+			margin-left:em(20px)
+		}
+		.play{
+			display: none;
+		}
+	}
+
+	.rightArrow{
+			width:94px;
+			height:90%;
+			top:30px;
+			background: url("../images/arrow_feedright.png") transparent no-repeat 0 50%;
+			&:hover{background: url("../images/arrow_feedright.png") transparent no-repeat -94px 50%;}
+	}
+	
+	
+	//Video page
+	.videoInformation{
+		.details{
+			p{
+				padding-right: em(140px);
+			}
+			h1{
+				padding-right: em(220px);
+			}
+		}
+	}
+	
+}
+
+/*  !---- $break-med ---- */
+@include breakpoint(med) 
+{
+
+	#searchMenu{
+		 width: 30%;
+		input[type="text"] {
+		    width: 65%;
+		}
+	}
+	.videoHome,.videoSeries{
+		object,.BrightcoveExperience{
+			width:448px;
+			height:252px;
+		}
+	}
+	.videoFull{
+		width: 100%;
+	}
+	.categoryInformation{
+			padding-top: em(160px);
+	}
+	.heroHomeBg,.heroSeriesBg{
+		height: 132%;
+	    max-height: 132%;
+	    max-width: none;
+	    width: auto;
+	    right:-2%;
+		@include addBlur;
+	}
+	
+	.categoryHeroBg{
+		max-width: 117%;
+		width: 117%;
+	    max-width: none;
+	    width: auto;
+	}
+	
+	.heroVideoBg{
+		height: 102%;
+	    max-height: 102%;
+	    max-width: none;
+	    width: auto;
+	    right:-2%;
+		@include addBlur;
+	}
+	
+	.heroArrow{
+		left: -40px;
+	}
+	
+	.onNow{
+		h3{
+			margin:em(5px) 0 em(5px)0 ;
+			font-size: em(25px);
+			padding:0 em(10px);
+		}
+		p{
+			padding:0 em(5px) em(7px) em(20px);
+			margin: 0 0 em(10px);
+		}
+		.description{
+			display:none;
+		}
+
+		.buttons{
+			margin-left:em(20px)
+		}
+		.play{
+			display: none;
+		}
+	}
+	
+	.seriesInformation{
+		h1{
+			display: none;
+		}
+		h3{
+			margin:em(5px) 0 em(5px)0 ;
+			font-size: em(25px);
+			padding:0 em(10px);
+		}
+		p{
+			padding:0 em(5px) em(7px) em(20px);
+			margin: 0 0 em(10px);
+		}
+		.description{
+			display:none;
+		}
+
+		.buttons{
+			margin-left:em(20px)
+		}
+		.play{
+			display: none;
+		}
+	}
+
+	#menu{
+		@include border-radius(4px);
+		margin-bottom:$vSpace;
+	}
+
+	.rightArrow{
+			width:94px;
+			height:90%;
+			top:30px;
+			background: url("../images/arrow_feedright.png") transparent no-repeat 0 50%;
+			&:hover{background: url("../images/arrow_feedright.png") transparent no-repeat -94px 50%;}
+	}
+	.feed{
+		ul{
+			display:block;
+		}
+	}
+	
+	.videoInformation {		
+		.details{
+			padding-right: em(180px);
+			min-height: em(120px);
+		}
+		 .videoTools{
+		 width:em(180px);
+		 margin-bottom: $vSpace;
+		 margin-left: $vSpace;
+		 div{
+			 float: left;
+			 margin-right: $hSpace;
+			 margin-bottom: em(5px);
+		 }
+			 h4{
+				 clear: both;
+				 float: none;
+				 margin-bottom: $hSpace;
+				 padding-top: 0;
+			 }
+		 }
+	}
+}
+
+
+@include breakpoint(800px){
+	#searchMenu{
+		width: 22%;
+		input[type="text"] {
+			    width: 65%;
+		}
+	}
+	.feed{
+		ul{
+			display:block;
+		}
+	}
+} 
+
+/*  !---- $break-small ---- */
+@include breakpoint(sml) 
+{
+
+
+	.hero{
+		width:100%;
+		padding:0;
+	}
+
+	#mobileMenu{
+		display:block;
+	}
+	
+	#menu{
+		max-width:100%;
+		width:auto;
+		padding:0;
+		.logo{
+			margin: 0 auto;
+			background-image:none;
+			padding-right:0;
+			display:block;
+			padding:em(10px);
+		}
+	}
+	.categoryHeroBg{
+		height: 130%;
+	    max-height: 130%;
+	    max-width: none;
+	    width: auto;
+	    top:-60px;
+	}
+	
+	.heroVideoBg,.heroHomeBg,.heroSeriesBg{
+		height: 105%;
+	    max-height: 105%;
+	    max-width: none;
+	    width: auto;
+	    right:-2%;
+	    @include removeBlur;
+	}
+	
+	.breadCrumb{
+		display: none;
+	}
+	
+	.categoryInformation{
+		padding-top: em(150px);
+		padding-left: $vSpace;
+		width:100%;
+	}
+	
+	.genericHeader{
+		.information{
+			width:100%;
+		}
+	}
+
+	
+	.heroCategoryArrow{
+		left: em(-30px);
+	}
+	
+	.breadCrumb{
+		display: none;
+	}
+	
+	.videoFull{
+		padding-top: 55%;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		width: 96%;
+		.play{
+			position: absolute;
+			bottom: -10px;
+			right:0;
+			display: inline-block;
+		}
+	}
+	
+	.videoInformation {
+		padding:0 em(15px);
+		clear: both;
+		.details{
+			width: 100%;
+			margin-bottom: em(10px);
+			p{
+				padding-right: em(10px);
+			}
+		}		
+		 .videoTools{
+			 float: none;
+			 margin-bottom: $vSpace;
+			 width: 100%;
+			 position: relative;
+			 left: 0;
+			 top:0;
+		 }
+	}
+	
+	.videoInformationArrow{
+		left:em(-20px);
+		height: em(20px);
+	}
+	.heroArrow{
+		left: -30px;
+	}
+	.footerArrow{
+		left:-50px;
+	}
+	#epg{
+		.rightArrow{
+			width:45px;
+			height:90%;
+			background: url("../images/mobile_feedcutoff.png") transparent no-repeat 0 50% ;
+			&:hover{background: url("../images/mobile_feedcutoff.png") transparent no-repeat 0 50% ;}
+		}
+	}
+	.epgPagination{
+		display:block;
+		ul{
+			left:45%;
+		}
+	}
+	.onNow{
+		h2{
+			margin-top:$vSpace;
+			font-size: em(20px);
+			padding:5px 10px;
+			float: left;
+		}
+		h3{
+			margin-top:45%;
+			margin-bottom:0;
+			font-size: em(22px);
+			padding:5px 10px;
+		}
+		p{
+			font-size: em(14px);
+			line-height: em(19px);
+			padding:0 em(10px);
+			margin: 0 0 em(15px);
+		}
+		.description, .buttons{
+			display:none;
+		}
+		width:100%;
+		.play{
+			bottom: 10px;
+			position: absolute;
+			right: 10px;
+		}
+	}
+	
+	.seriesHeader{
+		padding-left: $hSpace;
+		background-position:left -120px;
+		h1{
+			padding: 0;
+			font:{
+				family: $headerFont;
+				size: em(26px);
+				weight:300;
+			}
+		}
+	}
+	
+	.seriesInformation{
+		h2{
+			margin-top:$vSpace;
+			font-size: em(20px);
+			padding:5px 10px;
+			float: left;
+		}
+		h3{
+			margin-top:45%;
+			margin-bottom:0;
+			font-size: em(22px);
+			padding:5px 10px;
+		}
+		p{
+			font-size: em(14px);
+			line-height: em(19px);
+			padding:0 em(10px);
+			margin: 0 0 em(15px);
+		}
+		.description, .buttons{
+			display:none;
+		}
+		width:100%;
+		.play{
+			bottom: 10px;
+			position: absolute;
+			right: 10px;
+		}
+	}
+	
+	.episodeList{
+		.moreButton{
+			display: none;
+		}
+		.button{margin: 0;}
+	}
+	
+	
+	.onNext{
+		.feed{
+			margin-bottom: 0;
+		}
+	}
+	.videoHome, .videoWrapper, .menuItems, #searchMenu, #categories,.showCategories, .hideCategories, #menu,.videoSeries{
+		display:none !important;
+	}
+	.feed,.results{
+		ul{
+			display:block;
+		}
+	}
+	.results{
+		.button{
+			text-align: center;
+			width:100%;
+		}
+	}
+	.feed{
+		.thumbTitle{
+			width:85%;
+		}
+	}
+	
+	.lastFeed{
+		padding-bottom: em(5px);
+	}
+
+	
+	footer{
+		.section, .siteInfo{
+			display: none;
+		}
+		
+		
+		.mobInfo{
+			display: block;
+			
+			.button{
+				width: 47.55%;
+				float: none;
+				padding-left: 1em;
+				margin-right: 2%;
+			}
+			.siteInfo{
+			
+				display: block;		
+			}
+			
+			.footerSocial{
+				clear:both;
+				float: none;
+				margin-top: $vSpace;
+				position:relative;
+				p{
+					font:{
+						size:em(15px)
+					}
+				}
+			}
+		}	
+	}
+} 
+
+/*  !---- $break-xsmall---- */
+@include breakpoint(xsml) 
+{
+	.onNext{
+		padding: em(20px) em(10px) 0 ;
+	}
+	.categoryHeroBg{
+		height: 110%;
+	    max-height: 110%;
+	    top:-10px;
+	}
+	.categoryInformation{
+		padding: em(120px) $hSpace 0 ;
+		h1{
+			font-size: em(30px)
+		}
+	}
+
+	.videoFull{
+		.play{
+			bottom:0;
+		}
+	}
+	.videoInformation {		
+		 .videoTools{
+		 div{
+			 float: left;
+			 margin-right: $vSpace;
+		 }
+			 h4{
+				 clear: both;
+				 float: none;
+				 margin-bottom: $hSpace;
+				 padding-top: 0;
+			 }
+		 }
+	}
+	.feed{
+		border-top:2px $color-divider solid;
+		margin:0;
+		.rightArrow{
+			display:none;
+		}
+
+		ul{
+			width:100%;
+			display:none;
+			.mobMore{
+				display: block;
+				margin:$hSpace 0;
+				width:100%;
+				a{@include box-sizing(border-box); 
+					width:100%;
+				}
+			}
+		}
+		
+		.showFeed{
+			display:block;
+			background: url("../images/sprite_mobile_acc_arrows.png") transparent no-repeat 97% 10px;
+			&:hover{
+				background: url("../images/sprite_mobile_acc_arrows.png") transparent no-repeat 97% 10px;
+				//padding:0;
+				color:$color-copy-default;
+			}
+		}
+		.hideFeed{
+			background: url("../images/sprite_mobile_acc_arrows.png") $color-bg no-repeat 97% -25px;
+			&:hover{
+				background: url("../images/sprite_mobile_acc_arrows.png") $color-bg no-repeat 97% -25px;
+			}
+		}
+	}
+	.colSml{
+		width:100%;
+	}
+	.colLrg{
+		width:100%;
+	}
+	.thumbLarge, .thumbSmall{
+		width:100%;
+		height: auto !important;
+		overflow: hidden;
+	}
+	#epg{
+		border:none;
+		ul{
+				display:block;
+				width:1600px;
+				li{
+					float:left;
+					margin-right:10px;
+				}
+			}
+
+		.colSml{
+			width:$smlThumbWidth;
+		}
+	}
+	
+	.epgPagination{
+		display:block;
+		ul{
+			left:40%;
+		}
+	}
+
+	.onNow{
+		h3{
+			margin-bottom:0;
+			font-size: em(20px);
+			padding:5px 10px;
+		}
+		.description, .buttons{
+			display:none;
+		}
+
+	}
+	
+	.seriesInformation{
+		h3{
+			margin-bottom:0;
+			font-size: em(20px);
+			padding:5px 10px;
+		}
+		.description, .buttons{
+			display:none;
+		}
+	}
+	.onNext{
+		h2{
+			font-size: em(20px);
+			padding-right:em(5px);
+			margin-bottom:$hSpace;
+		}
+	}
+	.onDemand{
+		padding:$hSpace 0 0 0;
+		border-bottom:1px $color-divider solid;
+		h2{
+			font-size: em(20px);
+			padding:0 em(10px);
+			margin-bottom:$hSpace;
+		}
+		h3{
+			font:{
+				size:em(16px);
+				weight:700;
+			}
+			margin:0;
+			a{
+				padding: $hSpace;
+				&:hover{
+					padding: $hSpace;
+				}
+			}
+		}
+		ul{
+			padding:0 $hSpace;
+		}
+	}
+	.series{
+		overflow: visible;
+		h3{
+			display: block;
+		}
+		ul{
+			width: 100%;
+		}
+		li{
+			width: 100%;
+			float: none;
+		}
+	}
+	
+	.footerSocial{
+		clear:both;
+		float: none;
+		margin-top: $vSpace;
+		position:relative;
+		p{
+			font:{
+				size:em(15px)
+			}
+		}
+	}
+	footer{
+		margin-top: $vSpace;
+		.mobInfo{
+			.button{
+				width: 100%;
+				float: none;
+				padding-left: 1em;
+				margin-right:0;
+			}
+		}
+	}
+}
+
+/*  !---- $break-xsmall---- */
+@include breakpoint(xxsml) 
+{
+	.onNow{
+		h3{
+			margin-bottom:0;
+			font-size: em(20px);
+			padding:5px 10px;
+		}
+	}
+	.seriesInformation{
+		h3{
+			margin-bottom:0;
+			font-size: em(20px);
+			padding:5px 10px;
+		}
+	}
+	footer{
+		padding:0 $hSpace $hSpace;
+		
+		.mobInfo{
+			.button{
+				width:83%;
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+.results{
+	margin-bottom:$vSpace;
+	display:block;
+	position:relative;
+	padding: 0 em(15px) 0 em(15px) ;
+	.noArrow{
+		background:transparent;
+	}	
+	ul{
+		display:block;
+		margin:0 0 $vSpace 0;
+		padding:0;
+		list-style:none;
+		@include box-sizing(border-box);
+		li{
+			float:left;
+			margin-right:10px;
+		}
+	}
+	.mobMore{
+		display: none;
+	}
+	.button{
+		clear: both;
+		margin: 0 auto;
+		width:em(350px);
+		float: none;
+		padding-right: em(70px);
+		padding-left: em(60px);
+		display: block;
+		text-align: center;
+	}
+}

@@ -1,0 +1,190 @@
+
+.thumbLarge, .thumbSmall{
+	border:2px #fff solid;
+	display:block;
+	margin-bottom:em(10px);
+	position:relative;
+	@include box-shadow(#e6e6e6 0px 0px 0px 2px);
+	@include box-sizing(border-box); 
+	overflow: hidden;
+	.play{
+		position: absolute;
+		bottom: -2px;
+		right: 2px;
+	}
+
+	.thumb{
+		max-width:100%;
+		height: auto !important;
+		-ms-interpolation-mode: bicubic;
+	}
+
+	.gradient{
+		position:absolute;
+		top:5px;
+		width:100%;
+		height:auto !important;
+		z-index:10;
+		display:block;
+		pointer-events: none;
+	}
+	.thumbInfo{
+			padding-left: em(7px);
+			bottom:em(7px);
+			position:absolute;
+			color:$color-copy-light;
+			@include text-shadow($textShadow);
+			display:inline-block;
+			width:100%;
+			z-index:11;
+	}
+	.thumbTitle{
+		width:75%;
+	}
+	
+	.videoCount{
+			position:absolute;
+			bottom: 3px;
+			right:2px;
+			padding:3px 8px;
+			margin: 3px;
+			z-index:13;
+			font-size: em(12px);
+			background-color: #333;
+			color: $color-copy-light;
+			@include border-radius(4px);
+	}
+	.videoHomeMetadata{
+		font-size:em(12px);
+	}
+	p{
+		margin:0;
+		line-height:em(20px);
+		//width:95%;
+	}
+	a{
+		color:$color-copy-light;
+	}
+	
+	&:hover{
+		border:2px #fff solid;
+		@include box-shadow($color-brand 0px 0px 0px 2px);
+		@include ceaser-transition($easeOutQuart, box-shadow, 400ms);
+		.play{
+			background: $playHover;
+			border-color:#fff ;
+			@include ceaser-transition($easeOutQuart, background-color, 200ms);
+		}
+	}
+	
+}
+
+.thumbLarge{
+	width:$lrgThumbWidth;
+	height:$lrgThumbHeight; 
+}
+
+.thumbSmall{
+	width:$smlThumbWidth;
+	height: $smlThumbHeight;
+}
+
+.colSml{
+	width:$smlThumbWidth;
+}
+
+.colLrg{
+	width:$lrgThumbWidth;
+}
+
+.feed{
+	overflow:hidden;
+	padding-left: 2px;
+	margin-bottom:$vSpace;
+	display:block;
+	position:relative;
+	.showFeed{
+		@include border-radius(4px);
+		border-bottom: none;
+		padding-right:em(30px);
+		background: url("../images/sprite_arrows.png") transparent no-repeat 95% -574px;
+		&:hover{
+			background: url("../images/sprite_arrows.png") transparent no-repeat 95% -685px;
+			color: $color-brand;
+		}
+	}	
+	
+	.noArrow{
+		background:transparent;
+		&:hover{
+			background:transparent;
+			color:$color-copy-default;
+		}
+	}	
+	ul{
+		display:block;
+		margin:0 0 $vSpace 0;
+		padding:0;
+		list-style:none;
+		width:1600px;
+		@include box-sizing(border-box);
+		li{
+			float:left;
+			margin-right:10px;
+		}
+	}
+	
+
+	.rightArrow{
+		display:block;
+		position:absolute;
+		z-index:20;
+		width:94px;
+		height:90%;
+		right:-30px;
+		top:30px;
+		background: url("../images/arrow_feedright.png") transparent no-repeat 0 50%;
+		&:hover{background: url("../images/arrow_feedright.png") transparent no-repeat -94px 50%;}
+	}
+	.mobMore{
+		display: none;
+	}
+}
+
+.lastFeed{
+	border-bottom: 1px $color-divider solid;
+	padding-bottom: $vSpace;
+}
+
+.episodeList{
+	overflow: visible;
+	ul{
+		width: 100%;
+	}
+	.button{
+		clear: both;
+		display: block;
+		margin: em(20px) auto;
+		width:em(300px);
+		text-align: center;
+	}
+	
+}
+
+.series{
+	overflow: visible;
+	.button{display: none;}
+	ul{
+		width: 100%;
+	}
+	li{
+		&:hover{
+			.thumbSmall{
+				border:2px #fff solid;
+				@include box-shadow($color-brand 0px 0px 0px 2px);
+			}
+		}
+	}
+}
+
+
