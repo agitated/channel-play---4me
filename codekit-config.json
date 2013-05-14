@@ -130,16 +130,14 @@
       "initialSize" : 44139,
       "fileType" : 4096
     },
-    "\/js\/column_slider-ck.js" : {
+    "\/css\/modules\/_favourites.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/column_slider-ck.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/column_slider-ck-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/css\/modules\/_favourites.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/images\/hero2.png" : {
       "ignoreWasSetByUser" : 0,
@@ -173,6 +171,17 @@
       "outputAbbreviatedPath" : "\/images\/sprite_mobile_acc_arrows.png",
       "initialSize" : 1636,
       "fileType" : 8192
+    },
+    "\/js\/column_slider-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/column_slider-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/column_slider-ck-ck.js",
+      "fileType" : 64
     },
     "\/images\/arrow_feedleft.png" : {
       "ignoreWasSetByUser" : 0,
@@ -363,7 +372,7 @@
     },
     "\/scss\/modules\/_favourites.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/scss\/modules\/_favourites.scss",
@@ -384,17 +393,6 @@
       "outputAbbreviatedPath" : "\/css\/_globals.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/images\/hero_bottom_arrow.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
-      "initialSize" : 1378,
-      "fileType" : 8192
     },
     "\/scss\/vendor\/ceaser-easing\/_easing-functions.sass" : {
       "ignoreWasSetByUser" : 0,
@@ -418,6 +416,17 @@
       "outputAbbreviatedPath" : "\/images\/img_thumb5.jpg",
       "initialSize" : 39494,
       "fileType" : 4096
+    },
+    "\/images\/hero_bottom_arrow.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/images\/hero_bottom_arrow.png",
+      "initialSize" : 1378,
+      "fileType" : 8192
     },
     "\/scss\/modules\/_menu.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -514,6 +523,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/images\/sprite_small_arrows.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/sprite_small_arrows.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/sprite_small_arrows.png",
+      "initialSize" : 2768,
+      "fileType" : 8192
+    },
     "\/scss\/modules\/_categories.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -525,17 +545,6 @@
       "outputAbbreviatedPath" : "\/css\/_categories.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/images\/sprite_small_arrows.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/sprite_small_arrows.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/sprite_small_arrows.png",
-      "initialSize" : 2768,
-      "fileType" : 8192
     },
     "\/scss\/partials\/_base.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -682,15 +691,6 @@
       "initialSize" : 2385,
       "fileType" : 8192
     },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 2048
-    },
     "\/scss\/modules\/_footer.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -715,6 +715,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 2048
+    },
     "\/images\/img_thumb4.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -724,6 +733,17 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/img_thumb4.jpg",
       "initialSize" : 31633,
+      "fileType" : 4096
+    },
+    "\/images\/channel_bg.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/channel_bg.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/channel_bg.jpg",
+      "initialSize" : 93741,
       "fileType" : 4096
     },
     "\/js\/enquire.min.js" : {
@@ -736,17 +756,6 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/enquire.min-ck.js",
       "fileType" : 64
-    },
-    "\/images\/channel_bg.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/channel_bg.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/channel_bg.jpg",
-      "initialSize" : 93741,
-      "fileType" : 4096
     },
     "\/images\/cat_home.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -879,6 +888,17 @@
       "initialSize" : 5998,
       "fileType" : 8192
     },
+    "\/images\/video_bottom_arrow.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/video_bottom_arrow.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/video_bottom_arrow.png",
+      "initialSize" : 3589,
+      "fileType" : 8192
+    },
     "\/scss\/vendor\/susy\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -891,17 +911,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/video_bottom_arrow.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/video_bottom_arrow.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/video_bottom_arrow.png",
-      "initialSize" : 3589,
-      "fileType" : 8192
-    },
     "\/images\/cat_careers.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -912,28 +921,6 @@
       "outputAbbreviatedPath" : "\/images\/cat_careers.jpg",
       "initialSize" : 9136,
       "fileType" : 4096
-    },
-    "\/images\/img_thumb3.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/img_thumb3.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/img_thumb3.jpg",
-      "initialSize" : 52217,
-      "fileType" : 4096
-    },
-    "\/js\/jquery-1.9.1.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/jquery-1.9.1.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/jquery-1.9.1.min-ck.js",
-      "fileType" : 64
     },
     "\/scss\/vendor\/susy\/_settings.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -957,6 +944,28 @@
       "outputAbbreviatedPath" : "\/images\/logo.png",
       "initialSize" : 5288,
       "fileType" : 8192
+    },
+    "\/js\/jquery-1.9.1.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery-1.9.1.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/jquery-1.9.1.min-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/img_thumb3.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/img_thumb3.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/img_thumb3.jpg",
+      "initialSize" : 52217,
+      "fileType" : 4096
     },
     "\/images\/mobile_feedcutoff.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1011,15 +1020,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/favourites-v2.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/favourites-v2.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/scss\/vendor\/susy\/_isolation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1029,6 +1029,18 @@
       "outputStyle" : 0,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_isolation.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/scss\/vendor\/_susy.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/scss\/vendor\/_susy.scss",
+      "outputStyle" : 0,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_susy.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -1042,18 +1054,6 @@
       "outputAbbreviatedPath" : "\/images\/cat_business.jpg",
       "initialSize" : 9136,
       "fileType" : 4096
-    },
-    "\/scss\/vendor\/_susy.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/scss\/vendor\/_susy.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_susy.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/images\/cat_finance.jpg" : {
       "ignoreWasSetByUser" : 0,

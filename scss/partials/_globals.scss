@@ -27,6 +27,7 @@ h1{
 	padding:0;
 	display:inline-block;
 	@include text-shadow($textShadow);
+  margin-bottom:em(5px);
 }
 
 h2{
