@@ -133,8 +133,10 @@ the rest of the HTML is processed and the page load is complete, remove the line
 				<div class="heroCategoryArrow"></div>
 		</header>
 		<div class="onNext">
+      <div class="slider">
 			<h2>ON NEXT</H2>
 			<div id="epg" class="feed cf">
+
 				<ul class="cf">
 					<li class="colSml">
 						<div class="thumbSmall">
@@ -217,11 +219,14 @@ the rest of the HTML is processed and the page load is complete, remove the line
 					<li><a href="#"></a></li>
 				</ul>
 			</div>
+    </div>
 			<div class="onNextArrow"></div>
 		</div>
 		<div class="onDemand">
+      <div class="slider">
 			<h2>ON DEMAND</H2>
 				<a class="button showCategories">SHOW CHANNELS</a>
+      </div>
 				<div class="cf" id="categories">
 					<ul class="categoriesGrid">
 						<li class="categoriesBlock blockLarge"><a class="red" href="#">HOT DEALS</a></li>
@@ -248,6 +253,7 @@ the rest of the HTML is processed and the page load is complete, remove the line
 				</div>
 
 			<div id="mostPopular" class="feed cf">
+        <div class="slider cf">
 				<h3><a class="showFeed" href="#">MOST POPULAR</a></h3>
 				<ul>
 					<li class="colLrg">
@@ -325,12 +331,34 @@ the rest of the HTML is processed and the page load is complete, remove the line
 						<a class="button buttonArrow" href="#"> VIEW MORE</a>
 					</li>
 				</ul>
-				<div class="rightArrow"></div>
 			</div>
+      	<div class="rightArrow"></div>
+    </div>
 			<div id="hotDeals" class="feed cf">
+        <div class="slider cf">
 				<h3><a class="showFeed" href="#">HOT DEALS</a></H3>
 				<ul>
 					
+					<li class="colSml">
+						<div class="thumbSmall">
+							<div class="thumbInfo">
+							<a class="buttonIcon play" href="#"></a>
+								<p class="thumbTitle">title for thumb</p>
+								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+							</div>
+							<img class="gradient" src="images/thumb_grad.png"/>
+							<img class="thumb" src="images/imgHolder.png"/>
+						</div>
+						<div class="thumbSmall">
+							<div class="thumbInfo">
+							<a class="buttonIcon play" href="#"></a>
+								<p class="thumbTitle">title for thumb</p>
+								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+							</div>
+							<img class="gradient" src="images/thumb_grad.png"/>
+							<img class="thumb" src="images/imgHolder.png"/>
+						</div>
+					</li>
 					<li class="colSml">
 						<div class="thumbSmall">
 							<div class="thumbInfo">
@@ -407,9 +435,11 @@ the rest of the HTML is processed and the page load is complete, remove the line
 					</li>
 
 				</ul>
+      </div>
 				<div class="rightArrow"></div>
 			</div>
 			<div id="recentlyAdded" class="feed cf">
+        <div class="slider cf">
 				<h3><a class="showFeed" href="#">RECENTLY ADDED</a></h3>
 				<ul>
 					<li class="colLrg">
@@ -487,6 +517,7 @@ the rest of the HTML is processed and the page load is complete, remove the line
 						<a class="button buttonArrow" href="#"> VIEW MORE</a>
 					</li>
 				</ul>
+      </div>
 				<div class="rightArrow"></div>
 			</div>
 
@@ -629,7 +660,7 @@ $(document).ready(function(){
     	enquire.register("screen and (max-width:480px)", {
 		    
 			match : function() {
-				$('.feed > h3').click(
+				$('.feed > div > h3').click(
 		      	function(e){
 		       		e.preventDefault();
 		        	$(this).children("a").toggleClass("hideFeed");
@@ -638,8 +669,8 @@ $(document).ready(function(){
 			},
 			unmatch : function() {
 				$('.feed ul').removeAttr('style');  
-				$('.feed > h3 > a').removeClass("hideFeed").addClass("showFeed");
-				$('.feed > h3').unbind('click');
+				$('.feed > div > h3 > a').removeClass("hideFeed").addClass("showFeed");
+				$('.feed > div > h3').unbind('click');
 			}
 		});
 })

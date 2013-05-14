@@ -78,6 +78,15 @@ $break-xlarge: 1180px;*/
 			display: none;
 		}
 	}
+  .nonSlider{
+    width:100%;
+    margin:0 auto;
+  }
+  .slider{
+    width:100%;
+    overflow:hidden;
+    margin:0 auto;
+  }
 
 	.rightArrow{
 			width:94px;
@@ -178,7 +187,17 @@ $break-xlarge: 1180px;*/
 			display: none;
 		}
 	}
-	
+  .slider{
+    width:918px;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  .nonSlider{
+    width:922px;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  
 	.seriesInformation{
 		h3{
 			margin:em(5px) 0 em(7px)0 ;
@@ -323,6 +342,19 @@ $break-xlarge: 1180px;*/
 		@include border-radius(4px);
 		margin-bottom:$vSpace;
 	}
+
+  .slider{
+    width:688px;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  .nonSlider{
+    width:692px;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  
+  
 
 	.rightArrow{
 			width:94px;
@@ -474,6 +506,9 @@ $break-xlarge: 1180px;*/
 			 position: relative;
 			 left: 0;
 			 top:0;
+       .social{
+         float:right;
+       }
 		 }
 	}
 	
@@ -581,6 +616,16 @@ $break-xlarge: 1180px;*/
 		.button{margin: 0;}
 	}
 	
+  .slider{
+    width:458px;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  .nonSlider{
+    width:462px;
+    overflow:hidden;
+    margin:0 auto;
+  }
 	
 	.onNext{
 		.feed{
@@ -626,6 +671,9 @@ $break-xlarge: 1180px;*/
 				float: none;
 				padding-left: 1em;
 				margin-right: 2%;
+        font:{
+          size:em(12px);
+        }
 			}
 			.siteInfo{
 			
@@ -808,6 +856,17 @@ $break-xlarge: 1180px;*/
 			padding:0 $hSpace;
 		}
 	}
+  
+  .nonSlider{
+    width:100%;
+    margin:0 auto;
+  }
+  .slider{
+    width:100%;
+    overflow:hidden;
+    margin:0 auto;
+  }
+  
 	.series{
 		overflow: visible;
 		h3{

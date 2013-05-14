@@ -648,7 +648,7 @@ footer {
 }
 
 .thumbLarge {
-  width: 446px;
+  width: 448px;
   height: 255px;
 }
 
@@ -659,18 +659,26 @@ footer {
 
 .colSml {
   width: 218px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .colLrg {
-  width: 446px;
+  width: 448px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .feed {
-  overflow: hidden;
   padding-left: 2px;
   margin-bottom: 1.33333em;
   display: block;
   position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .feed .showFeed {
   -webkit-border-radius: 4px;
@@ -705,20 +713,20 @@ footer {
 }
 .feed ul li {
   float: left;
-  margin-right: 10px;
+  margin-right: 12px;
 }
 .feed .rightArrow {
   display: block;
   position: absolute;
   z-index: 20;
-  width: 94px;
+  width: 50px;
   height: 90%;
-  right: -30px;
+  right: 0;
   top: 30px;
-  background: url("../images/arrow_feedright.png") transparent no-repeat 0 50%;
+  background: url("../images/arrow_feedright.png") transparent no-repeat -10px 50%;
 }
 .feed .rightArrow:hover {
-  background: url("../images/arrow_feedright.png") transparent no-repeat -94px 50%;
+  background: url("../images/arrow_feedright.png") transparent no-repeat -104px 50%;
 }
 .feed .mobMore {
   display: none;
@@ -731,6 +739,9 @@ footer {
 
 .episodeList {
   overflow: visible;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .episodeList ul {
   width: 100%;
@@ -745,6 +756,9 @@ footer {
 
 .series {
   overflow: visible;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .series .button {
   display: none;
@@ -760,6 +774,9 @@ footer {
 }
 
 .favourites {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   overflow: visible;
 }
 .favourites .button {
@@ -1991,7 +2008,7 @@ footer .footerSocial a {
 }
 .results .button {
   clear: both;
-  margin: 0 auto;
+  margin: 0 auto 5px;
   width: 23.33333em;
   float: none;
   padding-right: 4.66667em;
@@ -2101,6 +2118,17 @@ $break-xlarge: 1180px;*/
     display: none;
   }
 
+  .nonSlider {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
   .rightArrow {
     width: 94px;
     height: 90%;
@@ -2203,6 +2231,18 @@ $break-xlarge: 1180px;*/
   }
   .onNow .play {
     display: none;
+  }
+
+  .slider {
+    width: 918px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .nonSlider {
+    width: 922px;
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   .seriesInformation h3 {
@@ -2353,6 +2393,18 @@ $break-xlarge: 1180px;*/
     margin-bottom: 1.33333em;
   }
 
+  .slider {
+    width: 688px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .nonSlider {
+    width: 692px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
   .rightArrow {
     width: 94px;
     height: 90%;
@@ -2501,6 +2553,9 @@ $break-xlarge: 1180px;*/
     left: 0;
     top: 0;
   }
+  .videoInformation .videoTools .social {
+    float: right;
+  }
 
   .videoInformationArrow {
     left: -1.33333em;
@@ -2609,6 +2664,18 @@ $break-xlarge: 1180px;*/
     margin: 0;
   }
 
+  .slider {
+    width: 458px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .nonSlider {
+    width: 462px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
   .onNext .feed {
     margin-bottom: 0;
   }
@@ -2645,6 +2712,7 @@ $break-xlarge: 1180px;*/
     float: none;
     padding-left: 1em;
     margin-right: 2%;
+    font-size: 0.8em;
   }
   footer .mobInfo .siteInfo {
     display: block;
@@ -2812,6 +2880,17 @@ $break-xlarge: 1180px;*/
   }
   .onDemand ul {
     padding: 0 0.66667em;
+  }
+
+  .nonSlider {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
   }
 
   .series {
