@@ -288,9 +288,9 @@ h1 {
   line-height: 1.33333em;
   color: white;
   padding: 0;
-  display: inline-block;
   text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
   margin-bottom: 0.33333em;
+  clear: both;
 }
 
 h2 {
@@ -300,6 +300,15 @@ h2 {
   color: #68b5f7;
   padding: 0.26667em 0 0;
   margin-bottom: 1em;
+  margin-top: 1.33333em;
+  clear: both;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+.onDemand h2 {
   display: inline-block;
 }
 
@@ -310,6 +319,17 @@ h3 {
   color: #2a3a46;
   padding: 0.33333em 0 0;
   margin-bottom: 0.66667em;
+  clear: both;
+}
+
+h4 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 1.33333em;
+  font-weight: 300;
+  color: #2a3a46;
+  padding: 0.33333em 0 0;
+  margin-bottom: 0.66667em;
+  clear: both;
 }
 
 p {
@@ -318,6 +338,10 @@ p {
   font-weight: 400;
   line-height: 1.46667em;
   margin: 0 0 1.33333em;
+}
+
+ul, ol {
+  padding-left: 1.33333em;
 }
 
 a {
@@ -345,10 +369,12 @@ a:hover {
 
 .right {
   float: right;
+  margin-left: 20px;
 }
 
 .left {
   float: left;
+  margin-right: 20px;
 }
 
 .clear {
@@ -544,6 +570,12 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: url("../images/bg_header.jpg") black no-repeat left bottom;
+}
+
+.content {
+  display: block;
+  padding: 0 1.33333em 2.66667em;
+  position: relative;
 }
 
 #searchResults {

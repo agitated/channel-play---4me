@@ -1,0 +1,402 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"righ",
+				"rightArrow"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"non",
+				"nonSlider"
+			],
+			[
+				"col",
+				"column_slider"
+			],
+			[
+				"padd",
+				"padding-top:   (property)"
+			],
+			[
+				"text",
+				"text-decoration:   (property)"
+			],
+			[
+				"color-cop",
+				"color-copy-default"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"bore",
+				"border-left"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"color-copy-",
+				"color-copy-light"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"copy",
+				"color-copy-light"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"thum",
+				"smlThumbWidth"
+			],
+			[
+				"repeat",
+				"repeat-x"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"border",
+				"border-bottom:   (property)"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backg",
+				"background-color:   (property)"
+			],
+			[
+				"max-",
+				"max-width:   (property)"
+			],
+			[
+				"he",
+				"height:   (property)"
+			],
+			[
+				"global",
+				"globalPadding"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Bookmarks: Toggle"
+			],
+			[
+				"over",
+				"Snippet: overflow:visible"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ove",
+				"Snippet: overflow:visible"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"Snippet: ",
+				"Snippet: rgba()"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"console",
+				"Set Syntax: R Console"
+			]
+		],
+		"width": 602.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/partials/_breakpoints.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/homepage.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/index.haml",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/_layout.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/generic.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/partials/_globals.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/js/global.js",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/modules/_favourites.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/video_v2.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/partials/_buttons.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/favourites.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/channel.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/series.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/search.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/modules/_feed.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/modules/_on-next.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/js/column_slider.js",
+		"/Users/cagiasotis/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/index.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/scss/_base.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/scss/style.scss",
+		"/Users/cagiasotis/Library/Application Support/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/Users/cagiasotis/Downloads/stroll.js-master/js/stroll.min.js",
+		"/Users/cagiasotis/Downloads/stroll.js-master/css/stroll.css",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/images/blur.svg",
+		"/Users/cagiasotis/Desktop/ptsa alias",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/css/style.css",
+		"/Users/cagiasotis/Dropbox/projects/cp_4me/scss/style.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/images/ blur.svg",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/scss/_normalize.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/rebel6/sass/screen.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/config.rb",
+		"/Users/cagiasotis/Documents/projects/htdocs/workstv/index.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/rebel/sass/screen.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/workstv/sass/screen.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/cp_4me/images/hero.jpg",
+		"/Users/cagiasotis/Documents/projects/htdocs/rebel6/sass/screen.old",
+		"/Users/cagiasotis/Documents/projects/htdocs/rebel6/sass/ie.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/rebel6/index.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/rebel2/index.html",
+		"/Users/cagiasotis/Documents/projects/htdocs/rebel2/sass/screen.scss",
+		"/Users/cagiasotis/Dropbox/Z - Design resources/sass/mediaqueries/README.md",
+		"/Users/cagiasotis/Dropbox/Z - Design resources/protoyping/blueprint/index.html",
+		"/Users/cagiasotis/Dropbox/Z - Design resources/protoyping/blueprint/sass/screen.scss",
+		"/Users/cagiasotis/Documents/projects/31 - Rebel TV/50 - build/index.html",
+		"/Users/cagiasotis/Dropbox/Z - Design resources/protoyping/blueprint/style/screen.scss",
+		"/Users/cagiasotis/Documents/projects/31 - Rebel TV/50 - build/sass/screen.scss"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".feed",
+			".heroHomeBg",
+			".heroHomeBg, .heroSeriesBg",
+			".onDemand",
+			".seri",
+			".series",
+			"moreButton",
+			"<li class=\"",
+			"slider",
+			".mobMore",
+			"<li class=\"",
+			"opacity",
+			"a class=\"channelBlock blue blockLarge\"",
+			"a class=\"channelBlock blue blockSmall\"",
+			"thumb",
+			"background-opacity",
+			"blockRed",
+			"box-shadow",
+			"border-box",
+			".onNext",
+			".onDemand",
+			"top",
+			"400",
+			"dropdownCat",
+			"box-shadow",
+			"border-radius",
+			"'",
+			"sml",
+			"mobPorThumbHeight",
+			"cover",
+			"hover",
+			"<li class=\"thumbSmall\">",
+			"cover",
+			"$thumbHeight",
+			"$thumbWidth",
+			"text-shadow",
+			"videoMetadata",
+			"512",
+			"$color-brand",
+			"$color-SubHeader",
+			"$color-MainHeader",
+			"$color-MainHeader\n",
+			"}\n",
+			"background-opacity",
+			"$color-light",
+			".title",
+			";\n",
+			"z-index",
+			"$gutters",
+			"at-breakpoint",
+			"mainbg",
+			");}"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"a class=\"blue\"",
+			"blue",
+			"#onNext",
+			"\"",
+			"<div class=\"thumbSmall\">",
+			"$smlThumbHeight",
+			"$smlThumbWidth",
+			"$color-copy-default",
+			"$color-brand",
+			"$color-copy-menu",
+			"breakpoint"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true
+}

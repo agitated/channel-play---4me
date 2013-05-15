@@ -25,9 +25,9 @@ h1{
 	line-height:em(20px);
 	color: $color-copy-light;
 	padding:0;
-	display:inline-block;
 	@include text-shadow($textShadow);
   margin-bottom:em(5px);
+  clear:both;
 }
 
 h2{
@@ -39,7 +39,16 @@ h2{
 	color:$color-copy-h2;
 	padding:em(4px) 0 0;
 	margin-bottom:em(15px);
-	display:inline-block;
+	margin-top:em(20px);
+  clear:both;
+}
+
+h2:first-child{
+	margin-top: 0;
+}
+
+.onDemand h2{
+  display:inline-block;
 }
 h3{
 	font:{
@@ -50,6 +59,18 @@ h3{
 	color:$color-copy-default;
 	padding:em(5px) 0 0;
 	margin-bottom:em(10px);
+  clear:both;
+}
+h4{
+	font:{
+		family: $headerFont;
+		size: em(20px);
+		weight:300;
+	}
+	color:$color-copy-default;
+	padding:em(5px) 0 0;
+	margin-bottom:em(10px);
+  clear:both;
 }
 p{
 	font:{
@@ -61,6 +82,9 @@ p{
 	margin:0 0 $vSpace;
 }
 
+ul,ol{
+	padding-left: em(20px);
+}
 a{
 	border-bottom: $color-copy-link 1px solid;
 	text-decoration:none;
@@ -82,10 +106,12 @@ a{
 }
 .right{
 	float:right;
+  margin-left:20px;
 }
 
 .left{
 	float:left;
+  margin-right:20px;
 }
 
 .clear{

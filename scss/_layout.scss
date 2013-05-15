@@ -41,6 +41,12 @@
     background: url("../images/bg_header.jpg") #000 no-repeat left bottom;
 }
 
+.content{
+	display:block;
+	padding: 0 em(20px) em(40px);
+	position: relative;
+}
+
 #searchResults{
 	padding: 0 em(15px) 0 em(15px) ;
 }
