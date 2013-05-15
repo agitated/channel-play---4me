@@ -146,8 +146,6 @@
 			margin-right:12px;
 		}
 	}
-	
-
 	.rightArrow{
     display: block;
     position: absolute;
@@ -177,7 +175,7 @@
 	}
 }
 
-.slider,.nonSlider{padding:2px 0 2px 2px;position:relative;}
+.slider,.nonSlider{padding:2px 0 2px 2px;position:relative;@include box-sizing(border-box); }
 
 .lastFeed{
 	border-bottom: 1px $color-divider solid;
@@ -215,109 +213,3 @@
 		}
 	}
 }
-
-//Favourites
-.favourites{
-  @include box-sizing(border-box); 
-  	overflow: visible;
-  	.button{display: none;}
-  	ul{
-  		width: 100%;
-  	}
-    .favourite,.favourited{
-      position: absolute;
-      right: 5px;
-      top: 5px; 
-    }
-    .tools{
-      padding:em(7px) em(7px) 0 ;
-      background-color:$color-thumb-tools-bg;
-      margin-top:em(-9px);
-      	@include box-shadow($color-boxshaddow 0px 0px 0px 2px);
-        @include border-radius(2px);
-      .favourite,.favourited{
-        float:right;
-        margin:0;
-      }
-      p{
-        font:{
-          size:em(12px);
-        }
-        color:$color-copy-button;
-        padding-top:em(10px);
-        float:left;
-        display:inline-block;
-      }
-    }
-  }
-  
-  //Favourites v2
-  .favourites-v2{
-    	overflow: visible;
-    	.button{display: none;}
-    	ul{
-    		width: 100%;
-        li{
-          margin-bottom:em(10px);
-        }
-    	}
-      .thumbInfo{
-        padding-left:5px;
-       
-    		
-        .thumbTitle{
-          width:100%;
-        }
-        .play{
-          opacity:0;
-        }
-      }
-      
-      .thumbSmall{
-        &:hover{
-      		.play{
-      			background: $playHover;
-      			border-color:#fff ;
-            opacity:1;
-      			@include ceaser-transition($easeOutQuart, opacity, 200ms);
-            
-      		}
-        }
-      }
-      
-      
-      .tools{
-        padding:em(7px) em(7px) 0 ;
-        background-color:$color-thumb-tools-bg;
-        margin-top:em(-9px);
-        	@include box-shadow($color-boxshaddow 0px 0px 0px 2px);
-          @include border-radius(2px);
-        .favourite,.favourited{
-          float:right;
-          margin:0;
-          @include ceaser-transition($easeOutQuart, background-color, 200ms);
-        }
-        p{
-          font:{
-            size:em(12px);
-          }
-          color:$color-copy-button;
-          padding-top:em(10px);
-          float:left;
-          color:#d6d6d6;
-        }
-        
-        &:hover{
-      		.favourited{
-      			 background: url("../images/sprite_icons.png") $color-button-unfavourite no-repeat -37px -96px;
-             	@include ceaser-transition($easeOutQuart, background-color, 200ms);
-      		}
-          p{
-            color:$color-button-unfavourite;
-            @include ceaser-transition($easeOutQuart, color, 200ms);
-            //opacity:1;
-          }
-        }
-      }
-    }
-  

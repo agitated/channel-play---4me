@@ -859,11 +859,12 @@ $break-xlarge: 1180px;*/
   
   .nonSlider{
     width:100%;
+    overflow: visible;
     margin:0 auto;
   }
   .slider{
     width:100%;
-    overflow:hidden;
+   	overflow: visible;
     margin:0 auto;
   }
   
