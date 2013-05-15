@@ -7,7 +7,9 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Titillium+Web:300,600" rel="stylesheet" type="text/css"/>
  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
  <script type="text/javascript" src="js/enquire.min.js"></script>
- <script type="text/javascript" src="stroll.min.js"></script>
+ <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script type="text/javascript" src="js/column_slider.js"></script>
+   <script type="text/javascript" src="js/global.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 
 </head>
@@ -147,7 +149,7 @@ the rest of the HTML is processed and the page load is complete, remove the line
 				<div class="heroCategoryArrow"></div>
 		</div>
 		<div class="onDemand">
-				<div id="Episodes" class="feed episodeList cf">
+				<div id="Episodes" class="feed cf">
           <div class="nonSlider">
 					<h3><a class="showFeed noArrow" href="#">Episodes</a></h3>
 					<ul class="cf">
@@ -316,12 +318,12 @@ the rest of the HTML is processed and the page load is complete, remove the line
 							<a href="#"><img class="thumb" src="images/img_thumb6.jpg" alt="img_thumb1" /></a>
 						</div>
 					</li>
-					<li class="mobMore">
-						<a class="button" href="#"> Show more episodes</a>
-					</li>
+
+						
 					</ul>
-					<a class="moreButton button"> Show more episodes</a>
+					<a class="mobMore button" href="#"> Show more episodes</a>
 				</div>
+				<a class="moreButton button"> Show more episodes</a>
       </div>
 		</div>
 
@@ -406,78 +408,6 @@ the rest of the HTML is processed and the page load is complete, remove the line
 		</div>
 		</footer>
 	</div>
-<script>
-$(document).ready(function(){
-    var Input = $('#search-text');
-    var default_value = Input.val();
-
-    $(Input).focus(function() {
-        if($(this).val() == default_value)
-        {
-             $(this).val("");
-        }
-    }).blur(function(){
-        if($(this).val().length == 0) /*Small update*/
-        {
-            $(this).val(default_value);
-        }
-    });
-    $('.favourite').click(
-    	function(e){
-       		e.preventDefault();
-        	$(this).toggleClass("favourited",2000,"easeOutSine");
-    	});
-     $('.showCategories').click(
-      	function(e){
-       		e.preventDefault();
-        	$(this).toggleClass("hideCategories",2000,"easeOutSine").promise().done(function(){
-        		$('#categories').slideToggle(function() {$('.showCategories').text($(this).is(':visible') ? "HIDE CHANNELS" : "SHOW CHANNELS"); });
-        	});
-    	});
-    	
-    	 $('.mMenu').click(
-      	function(e){
-       		e.preventDefault();
-       		 if($('.mSearch').is(":visible")) {
-	       		 $('.mSearchForm').slideUp();
-	       		 $('.mSearch').removeClass("mSearchSelected").addClass("mSearch");
-	       	}
-        	$(this).toggleClass("mMenuSelected",2000,"easeOutSine").promise().done(function(){
-        		$('.expandedMenu').slideToggle();
-        	});
-    	});
-    	
-    	$('.mSearch').click(
-      	function(e){
-       		e.preventDefault();
-       		 if($('.mMenu').is(":visible")) {
-	       		 $('.expandedMenu').slideUp();
-	       		 $('.mMenu').removeClass("mMenuSelected").addClass("mMenu");
-	       	}
-       		
-        	$(this).toggleClass("mSearchSelected",2000,"easeOutSine").promise().done(function(){
-        		$('.mSearchForm').slideToggle();
-        	});
-    	});
-    	
-    	enquire.register("screen and (max-width:480px)", {
-		    
-			match : function() {
-				$('.feed > h3').click(
-		      	function(e){
-		       		e.preventDefault();
-		        	$(this).children("a").toggleClass("hideFeed");
-		        	$(this).siblings("ul").slideToggle();
-		    	});
-			},
-			unmatch : function() {
-				$('.feed ul').removeAttr('style');  
-				$('.feed > h3 > a').removeClass("hideFeed").addClass("showFeed");
-				$('.feed > h3').unbind('click');
-			}
-		});
-})
-</script>
 </body>
 </html>
   

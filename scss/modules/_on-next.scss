@@ -24,13 +24,14 @@
 	//padding-bottom:30px;
 	display: block;
 	position: relative;
-  overflow:hidden;
+  	overflow:hidden;
 
 	.rightArrow{
 		top:-7px;
 	}
 	
 	ul{
+		width:1600px;
 		li{
 			.thumbSmall{
 				&:hover{

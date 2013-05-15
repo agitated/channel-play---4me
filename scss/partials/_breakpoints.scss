@@ -263,8 +263,8 @@ $break-xlarge: 1180px;*/
 			padding-top: em(160px);
 	}
 	.heroHomeBg,.heroSeriesBg{
-		height: 132%;
-	    max-height: 132%;
+		height: 142%;
+	    max-height: 142%;
 	    max-width: none;
 	    width: auto;
 	    right:-2%;
@@ -617,11 +617,13 @@ $break-xlarge: 1180px;*/
 	}
 	
   .slider{
+    display:block;
     width:458px;
     overflow:hidden;
     margin:0 auto;
   }
   .nonSlider{
+    display:block;
     width:462px;
     overflow:hidden;
     margin:0 auto;
@@ -632,12 +634,20 @@ $break-xlarge: 1180px;*/
 			margin-bottom: 0;
 		}
 	}
-	.videoHome, .videoWrapper, .menuItems, #searchMenu, #categories,.showCategories, .hideCategories, #menu,.videoSeries,.leftArrow,.rightArrow{
+	.videoHome, .videoWrapper, .menuItems, #searchMenu, #categories,.showCategories, .hideCategories, #menu,.videoSeries{
 		display:none !important;
 	}
+
+
 	.feed,.results{
 		ul{
 			display:block;
+		}
+	}
+
+	#epg{
+		ul{
+			width:1600px !important;
 		}
 	}
 	.results{
@@ -735,21 +745,26 @@ $break-xlarge: 1180px;*/
 	.feed{
 		border-top:2px $color-divider solid;
 		margin:0;
-		.rightArrow{
-			display:none;
+		.leftArrow,.rightArrow{
+			display:none !important;
 		}
 
+	
+    .mobMore{
+      display: block;
+      margin:$hSpace;
+      @include box-sizing(border-box); 
+      a{
+        width:100%;
+      }
+    }
+
 		ul{
-			width:100%;
-			display:none;
-			.mobMore{
-				display: block;
-				margin:$hSpace 0;
-				width:100%;
-				a{@include box-sizing(border-box); 
-					width:100%;
-				}
-			}
+			width:100% !important;
+			li{
+        margin-right: 0;
+        margin-left: 0;
+      }
 		}
 		
 		.showFeed{
@@ -835,7 +850,7 @@ $break-xlarge: 1180px;*/
 		padding:$hSpace 0 0 0;
 		border-bottom:1px $color-divider solid;
 		h2{
-			font-size: em(20px);
+			font-size: em(24px);
 			padding:0 em(10px);
 			margin-bottom:$hSpace;
 		}
@@ -861,26 +876,19 @@ $break-xlarge: 1180px;*/
     width:100%;
     overflow: visible;
     margin:0 auto;
+
   }
   .slider{
     width:100%;
+    display:none;
    	overflow: visible;
     margin:0 auto;
+    padding: 0;
   }
-  
-	.series{
-		overflow: visible;
-		h3{
-			display: block;
-		}
-		ul{
-			width: 100%;
-		}
-		li{
-			width: 100%;
-			float: none;
-		}
-	}
+
+  #searchResults{
+    border:none;
+  }
 	
 	.footerSocial{
 		clear:both;

@@ -3,7 +3,7 @@ $playHover: url("../images/sprite_icons.png") $color-button-hover no-repeat -37p
 
 .button{
 	@include border-radius(3px);
-	background:transparent;
+	background:#333;
 	@include box-shadow(rgba( 0, 0, 0,0.1 ) 0px 0px 1px 1px);
 	@include box-sizing(border-box); 
 	padding: $hSpace em(15px);
@@ -24,12 +24,14 @@ $playHover: url("../images/sprite_icons.png") $color-button-hover no-repeat -37p
 .buttonArrow{
 	clear: both;
 	padding-right: em(40px);
-	background: url("../images/sprite_arrows.png") $color-button-hover 98% -373px no-repeat;
+	background: url("../images/sprite_arrows.png") #333 98% -373px no-repeat;
 	&:hover{
 		background: url("../images/sprite_arrows.png") $color-button-hover 98% -470px no-repeat;
 		@include ceaser-transition($easeOutQuart, background-color, 200ms);
 	}
 }
+
+
 
 .buttonIcon{
 	@include border-radius(8px);
@@ -47,6 +49,14 @@ $playHover: url("../images/sprite_icons.png") $color-button-hover no-repeat -37p
 		border-color: #fff;
 	}
 }
+
+.moreButton{
+		clear: both;
+		display: block;
+		margin: em(20px) auto;
+		width:em(300px);
+		text-align: center;
+	}
 
 .favourite{	
 	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -96px;

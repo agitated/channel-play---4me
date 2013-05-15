@@ -41,6 +41,10 @@
     background: url("../images/bg_header.jpg") #000 no-repeat left bottom;
 }
 
+#searchResults{
+	padding: 0 em(15px) 0 em(15px) ;
+}
+
 
 footer{
 	padding: 0 $vSpace $vSpace;

@@ -139,11 +139,11 @@
 		margin:0 0 $vSpace 0;
 		padding:0;
 		list-style:none;
-		width:1600px;
 		@include box-sizing(border-box);
 		li{
 			float:left;
-			margin-right:12px;
+			margin-right:10px;
+			margin-left:2px;
 		}
 	}
 	.rightArrow{
@@ -175,41 +175,9 @@
 	}
 }
 
-.slider,.nonSlider{padding:2px 0 2px 2px;position:relative;@include box-sizing(border-box); }
+.slider,.nonSlider{display:block;padding:2px 0;position:relative;@include box-sizing(border-box); }
 
 .lastFeed{
 	border-bottom: 1px $color-divider solid;
 	padding-bottom: $vSpace;
-}
-
-.episodeList{
-	overflow: visible;
-	ul{
-		width: 100%;
-	}
-	.button{
-		clear: both;
-		display: block;
-		margin: em(20px) auto;
-		width:em(300px);
-		text-align: center;
-	}
-	@include box-sizing(border-box); 
-}
-
-.series{
-	overflow: visible;
-  @include box-sizing(border-box); 
-	.button{display: none;}
-	ul{
-		width: 100%;
-	}
-	li{
-		&:hover{
-			.thumbSmall{
-				border:2px #fff solid;
-				@include box-shadow($color-brand 0px 0px 0px 2px);
-			}
-		}
-	}
 }

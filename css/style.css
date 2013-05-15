@@ -382,7 +382,7 @@ a:hover {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  background: transparent;
+  background: #333;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px 1px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px 1px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px 1px;
@@ -409,7 +409,7 @@ a:hover {
 .buttonArrow {
   clear: both;
   padding-right: 2.66667em;
-  background: url("../images/sprite_arrows.png") rgba(55, 157, 244, 0.6) 98% -373px no-repeat;
+  background: url("../images/sprite_arrows.png") #333333 98% -373px no-repeat;
 }
 .buttonArrow:hover {
   background: url("../images/sprite_arrows.png") rgba(55, 157, 244, 0.6) 98% -470px no-repeat;
@@ -443,6 +443,14 @@ a:hover {
 .buttonIcon:active {
   background-color: #5ecc9a;
   border-color: #fff;
+}
+
+.moreButton {
+  clear: both;
+  display: block;
+  margin: 1.33333em auto;
+  width: 20em;
+  text-align: center;
 }
 
 .favourite {
@@ -536,6 +544,10 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   background: url("../images/bg_header.jpg") black no-repeat left bottom;
+}
+
+#searchResults {
+  padding: 0 1em 0 1em;
 }
 
 footer {
@@ -709,14 +721,14 @@ footer {
   margin: 0 0 1.33333em 0;
   padding: 0;
   list-style: none;
-  width: 1600px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .feed ul li {
   float: left;
-  margin-right: 12px;
+  margin-right: 10px;
+  margin-left: 2px;
 }
 .feed .rightArrow {
   display: block;
@@ -751,7 +763,8 @@ footer {
 }
 
 .slider, .nonSlider {
-  padding: 2px 0 2px 2px;
+  display: block;
+  padding: 2px 0;
   position: relative;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -761,42 +774,6 @@ footer {
 .lastFeed {
   border-bottom: 1px #e7e7e7 solid;
   padding-bottom: 1.33333em;
-}
-
-.episodeList {
-  overflow: visible;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.episodeList ul {
-  width: 100%;
-}
-.episodeList .button {
-  clear: both;
-  display: block;
-  margin: 1.33333em auto;
-  width: 20em;
-  text-align: center;
-}
-
-.series {
-  overflow: visible;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.series .button {
-  display: none;
-}
-.series ul {
-  width: 100%;
-}
-.series li:hover .thumbSmall {
-  border: 2px #fff solid;
-  -webkit-box-shadow: #379df4 0px 0px 0px 2px;
-  -moz-box-shadow: #379df4 0px 0px 0px 2px;
-  box-shadow: #379df4 0px 0px 0px 2px;
 }
 
 /*  !--------- MENU ---------  */
@@ -1510,6 +1487,9 @@ footer .footerSocial a {
 }
 #epg .rightArrow {
   top: -7px;
+}
+#epg ul {
+  width: 1600px;
 }
 #epg ul li .thumbSmall:hover {
   border: 2px #fff solid;
@@ -2262,8 +2242,8 @@ $break-xlarge: 1180px;*/
   }
 
   .heroHomeBg, .heroSeriesBg {
-    height: 132%;
-    max-height: 132%;
+    height: 142%;
+    max-height: 142%;
     max-width: none;
     width: auto;
     right: -2%;
@@ -2626,12 +2606,14 @@ $break-xlarge: 1180px;*/
   }
 
   .slider {
+    display: block;
     width: 458px;
     overflow: hidden;
     margin: 0 auto;
   }
 
   .nonSlider {
+    display: block;
     width: 462px;
     overflow: hidden;
     margin: 0 auto;
@@ -2641,12 +2623,16 @@ $break-xlarge: 1180px;*/
     margin-bottom: 0;
   }
 
-  .videoHome, .videoWrapper, .menuItems, #searchMenu, #categories, .showCategories, .hideCategories, #menu, .videoSeries, .leftArrow, .rightArrow {
+  .videoHome, .videoWrapper, .menuItems, #searchMenu, #categories, .showCategories, .hideCategories, #menu, .videoSeries {
     display: none !important;
   }
 
   .feed ul, .results ul {
     display: block;
+  }
+
+  #epg ul {
+    width: 1600px !important;
   }
 
   .results .button {
@@ -2726,23 +2712,25 @@ $break-xlarge: 1180px;*/
     border-top: 2px #e7e7e7 solid;
     margin: 0;
   }
-  .feed .rightArrow {
-    display: none;
+  .feed .leftArrow, .feed .rightArrow {
+    display: none !important;
   }
-  .feed ul {
-    width: 100%;
-    display: none;
-  }
-  .feed ul .mobMore {
+  .feed .mobMore {
     display: block;
-    margin: 0.66667em 0;
-    width: 100%;
-  }
-  .feed ul .mobMore a {
+    margin: 0.66667em;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .feed .mobMore a {
     width: 100%;
+  }
+  .feed ul {
+    width: 100% !important;
+  }
+  .feed ul li {
+    margin-right: 0;
+    margin-left: 0;
   }
   .feed .showFeed {
     display: block;
@@ -2824,7 +2812,7 @@ $break-xlarge: 1180px;*/
     border-bottom: 1px #e7e7e7 solid;
   }
   .onDemand h2 {
-    font-size: 1.33333em;
+    font-size: 1.6em;
     padding: 0 0.66667em;
     margin-bottom: 0.66667em;
   }
@@ -2851,22 +2839,14 @@ $break-xlarge: 1180px;*/
 
   .slider {
     width: 100%;
+    display: none;
     overflow: visible;
     margin: 0 auto;
+    padding: 0;
   }
 
-  .series {
-    overflow: visible;
-  }
-  .series h3 {
-    display: block;
-  }
-  .series ul {
-    width: 100%;
-  }
-  .series li {
-    width: 100%;
-    float: none;
+  #searchResults {
+    border: none;
   }
 
   .footerSocial {

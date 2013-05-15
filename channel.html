@@ -7,6 +7,9 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Titillium+Web:300,600" rel="stylesheet" type="text/css">
  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
  <script type="text/javascript" src="js/enquire.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+   <script type="text/javascript" src="js/column_slider.js"></script>
+   <script type="text/javascript" src="js/global.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 
 </head>
@@ -90,7 +93,7 @@
 		<div class="onDemand">
       <div class="nonSlider">
 			<h2>Series in this category</H2>
-			<div id="series" class="feed series cf">
+			<div id="series" class="feed cf">
         
 				<h3><a class="showFeed noArrow" href="#">SERIES</a></h3>
 				<ul>
@@ -207,87 +210,188 @@
       </div>
 			</div>
 			<div id="recentlyAdded" class="feed cf">
+        <div class="nonSlider">
+  				<h3 ><a class="showFeed" href="#">RECENTLY ADDED</a></h3>
+        </div>
         <div class="slider">
-				<h3><a class="showFeed" href="#">RECENTLY ADDED</a></h3>
-				<ul>
-					<li class="colLrg col1">
-						<div class="thumbLarge">
-							<div class="thumbInfo">
-								<a class="buttonIcon play" href="#"></a>
-								<p class="thumbTitle">title for thumb title for thumb title for thumb</p>
-								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
-							</div>
-							<img class="gradient" src="images/thumb_grad.png"/>
-							<a href="#"><img class="thumb" src="images/health_min_angela_jacobsen.jpg" alt="health_min_angela_jacobsen" /></a>
-						</div>
-					</li>
-					<li class="colSml">
-						<div class="thumbSmall">
-							<div class="thumbInfo">
-								<a class="buttonIcon play" href="#"></a>
-								<p class="thumbTitle">title for thumb</p>
-								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
-							</div>
-							<img class="gradient" src="images/thumb_grad.png"/>
-							<a href="#"><img class="thumb" src="images/img_thumb1.jpg" alt="img_thumb1" /></a>
-						</div>
-						<div class="thumbSmall">
-							<div class="thumbInfo">
-								<a class="buttonIcon play" href="#"></a>
-								<p class="thumbTitle">title for thumb</p>
-								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
-							</div>
-							<img class="gradient" src="images/thumb_grad.png"/>
-							<a href="#"><img class="thumb" src="images/img_thumb2.jpg" alt="img_thumb1" /></a>
-						</div>
-					</li>
-					<li class="colSml">
-						<div class="thumbSmall">
-							<div class="thumbInfo">
-								<div class="buttonIcon play" href="#"></div>
-								<p class="thumbTitle">Healthy Hawker Trail: Laksa</p>
-								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
-							</div>
-							<img class="gradient" src="images/thumb_grad.png"/>
-							<a href="#"><img class="thumb" src="images/img_thumb3.jpg" alt="img_thumb1" /></a>
-						</div>
-						<div class="thumbSmall">
-							<div class="thumbInfo">
-								<a class="buttonIcon play" href="#"></a>
-								<p class="thumbTitle">title for thumb</p>
-								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
-							</div>
-							<img class="gradient" src="images/thumb_grad.png"/>
-							<a href="#"><img class="thumb" src="images/img_thumb4.jpg" alt="img_thumb1" /></a>
-						</div>
-					</li>
-					<li class="colSml">
-						<div class="thumbSmall">
-							<div class="thumbInfo">
-								<a class="buttonIcon play" href="#"></a>
-								<p class="thumbTitle">title for thumb</p>
-								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
-							</div>
-							<img class="gradient" src="images/thumb_grad.png"/>
-							<a href="#"><img class="thumb" src="images/img_thumb5.jpg" alt="img_thumb1" /></a>
-						</div>
-						<div class="thumbSmall">
-							<div class="thumbInfo">
-							<a class="buttonIcon play" href="#"></a>
-								<p class="thumbTitle">title for thumb</p>
-								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
-							</div>
-							<img class="gradient" src="images/thumb_grad.png"/>
-							<a href="#"><img class="thumb" src="images/img_thumb6.jpg" alt="img_thumb1" /></a>
-						</div>
-					</li>
-					<li class="mobMore">
-						<a class="button buttonArrow" href="#"> VIEW MORE</a>
-					</li>
-				</ul>
-      </div>
-				<div class="rightArrow"></div>
-			</div>
+  				<ul class="cf">
+  					<li class="column colLrg">
+  						<div class="thumbLarge">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb title for thumb title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/health_min_angela_jacobsen.jpg" alt="health_min_angela_jacobsen" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb1.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb2.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<div class="buttonIcon play" href="#"></div>
+  								<p class="thumbTitle">Healthy Hawker Trail: Laksa</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb3.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb4.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb5.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  							<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb6.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb1.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb2.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb5.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  							<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb6.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb1.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb2.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb5.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  							<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb6.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  					<li class="column colSml">
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb1.jpg" alt="img_thumb1" /></a>
+  						</div>
+  						<div class="thumbSmall">
+  							<div class="thumbInfo">
+  								<a class="buttonIcon play" href="#"></a>
+  								<p class="thumbTitle">title for thumb</p>
+  								<p class="videoMetadata"><a href="#">HealthyMEtv</a> - 25mins</p>
+  							</div>
+  							<img class="gradient" src="images/thumb_grad.png"/>
+  							<a href="#"><img class="thumb" src="images/img_thumb2.jpg" alt="img_thumb1" /></a>
+  						</div>
+  					</li>
+  				</ul>
+          <a class="mobMore button buttonArrow" href="#"> VIEW MORE</a>
+        </div>
+        <a class="leftArrow"></a>
+  			<a class="rightArrow"></a>
+  		</div>
 		</div>
 		<footer class="cf">
 		<div class="footerArrow cf"></div>
@@ -370,75 +474,6 @@
 		</div>
 		</footer>
 	</div>
-<script>
-$(document).ready(function(){
-    var Input = $('#search-text');
-    var default_value = Input.val();
-
-    $(Input).focus(function() {
-        if($(this).val() == default_value)
-        {
-             $(this).val("");
-        }
-    }).blur(function(){
-        if($(this).val().length == 0) /*Small update*/
-        {
-            $(this).val(default_value);
-        }
-    });
-    
-   
-    	
-    	 $('.mMenu').click(
-      	function(e){
-       		e.preventDefault();
-       		 if($('.mSearch').is(":visible")) {
-	       		 $('.mSearchForm').slideUp();
-	       		 $('.mSearch').removeClass("mSearchSelected").addClass("mSearch");
-	       	}
-        	$(this).toggleClass("mMenuSelected",2000,"easeOutSine").promise().done(function(){
-        		$('.expandedMenu').slideToggle();
-        	});
-    	});
-    	
-    	$('.mSearch').click(
-      	function(e){
-       		e.preventDefault();
-       		 if($('.mMenu').is(":visible")) {
-	       		 $('.expandedMenu').slideUp();
-	       		 $('.mMenu').removeClass("mMenuSelected").addClass("mMenu");
-	       	}
-       		
-        	$(this).toggleClass("mSearchSelected",2000,"easeOutSine").promise().done(function(){
-        		$('.mSearchForm').slideToggle();
-        	});
-    	});
-    	
-    	$('.favourite').click(
-    	function(e){
-       		e.preventDefault();
-        	$(this).toggleClass("favourited",2000,"easeOutSine");
-    	});
-    	
-    	enquire.register("screen and (max-width:480px)", {
-		    
-			match : function() {
-				$('.feed > h3').click(
-		      	function(e){
-		       		e.preventDefault();
-		        	$(this).children("a").toggleClass("hideFeed");
-		        	$(this).siblings("ul").slideToggle();
-		    	});
-			},
-			unmatch : function() {
-				$('.feed ul').removeAttr('style');  
-				$('.feed > h3 > a').removeClass("hideFeed").addClass("showFeed");
-				$('.feed > h3').unbind('click');
-			}
-		});
-})
-</script>
-
 </body>
 </html>
   
