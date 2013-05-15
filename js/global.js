@@ -76,12 +76,20 @@ $(document).ready(function(){
       }
 
       sliderInit();
-        
+      
+      var resize_handler = function(){
+        console.log("resize funtion")
+        $('.slider > ul').each(function(i, o){
+          $(o).column_slider("setWidth");
+        });        
+      };
+      var resize_listener;
     	enquire.register("screen and (max-width:480px)", {
 		    
 			match : function() {
         console.log("480px matched");
         $('.slider > ul').removeAttr('style');   
+        $(window).off('resize', resize_handler);
         console.log( $('.slider > ul').attr('style'));
 				$('.nonSlider > h3').click(
 		      function(e){
@@ -99,6 +107,7 @@ $(document).ready(function(){
         $('.slider > ul').each(function(i, o){
           $(o).column_slider("setWidth");
         });		
+        $(window).on('resize', resize_handler);
 			}
 		});
 })
