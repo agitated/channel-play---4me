@@ -59,7 +59,7 @@ $(document).ready(function(){
         arrowCallback = function(arrowFlags) {
            console.log(arrowFlags);
            $(o).parent().siblings('.leftArrow').css({display: arrowFlags.left ? 'block' : 'none'});
-           $(o).parent().siblings('.rightArrow').css({display: arrowFlags.right ? 'block' : 'none'});
+          $(o).parent().siblings('.rightArrow').css({display: arrowFlags.right ? 'block' : 'none'});
         }  
         $(o).column_slider({buttonCallback: arrowCallback});
         $(o).parent().parent().children('.rightArrow').on('click', {slider: $(o)}, function(evt) {

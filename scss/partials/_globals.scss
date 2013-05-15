@@ -78,7 +78,7 @@ p{
 		size: em(15px);
 		weight:400;
 	}
-	line-height:em(22px);
+	line-height:1.7em;
 	margin:0 0 $vSpace;
 }
 
@@ -107,12 +107,15 @@ a{
 .right{
 	float:right;
   margin-left:20px;
+  margin-bottom:10px;
 }
 
 .left{
 	float:left;
   margin-right:20px;
+  margin-bottom:10px;
 }
+
 
 .clear{
 	clear:both;
