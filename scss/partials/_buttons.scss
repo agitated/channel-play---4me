@@ -19,6 +19,7 @@ $playHover: url("../images/sprite_icons.png") $color-button-hover no-repeat -37p
 	}
 	&:hover{
     background:$color-button-hover;
+    color:$color-copy-light;
 		@include ceaser-transition($easeOutQuart, background-color, 200ms);
 	}
 }
@@ -27,8 +28,6 @@ $playHover: url("../images/sprite_icons.png") $color-button-hover no-repeat -37p
 	clear: both;
 	padding-right: em(40px);
 	background: url("../images/sprite_arrows.png") #202c36 98% -373px no-repeat;
-
-  
 	&:hover{
 		background: url("../images/sprite_arrows.png") $color-button-hover 98% -470px no-repeat;
 		@include ceaser-transition($easeOutQuart, background-color, 200ms);
@@ -36,6 +35,21 @@ $playHover: url("../images/sprite_icons.png") $color-button-hover no-repeat -37p
 }
 
 
+.buttonDanger{
+  color:$color-copy-light;
+  background:$color-button-danger;
+  &:hover{
+    background:$color-button-danger/1.5;
+  }
+}
+
+.buttonSuccess{
+  color:$color-copy-light;
+  background:$color-button-success;
+  &:hover{
+    background:$color-button-success/1.5;
+  }
+}
 
 .buttonIcon{
 	@include border-radius(8px);

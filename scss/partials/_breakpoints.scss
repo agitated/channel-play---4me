@@ -338,6 +338,10 @@ $break-xlarge: 1180px;*/
 		}
 	}
 
+  fieldset{
+    width:75%;
+  }
+
 	#menu{
 		@include border-radius(4px);
 		margin-bottom:$vSpace;
@@ -467,6 +471,9 @@ $break-xlarge: 1180px;*/
 		}
 	}
 
+  fieldset{
+    width:100%;
+  }
 	
 	.heroCategoryArrow{
 		left: em(-30px);
@@ -869,6 +876,14 @@ $break-xlarge: 1180px;*/
 		}
 		ul{
 			padding:0 $hSpace;
+		}
+	}
+  
+	.content{
+		img{
+			width:100%;
+			max-width:100%;
+			height:auto;
 		}
 	}
   

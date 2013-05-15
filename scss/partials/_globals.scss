@@ -82,6 +82,8 @@ p{
 	margin:0 0 $vSpace;
 }
 
+
+
 ul,ol{
 	padding-left: em(20px);
 }
@@ -120,6 +122,127 @@ a{
 .clear{
 	clear:both;
 }
+
+//Forms
+
+fieldset{
+	border:none;
+  background:rgba(229,239,243,0.3);
+  padding:em(20px) em(15px);
+  width:50%;
+  display:inline-block;
+  @include box-sizing(border-box); 
+  @include box-shadow(rgba( 0, 0, 0,0.2 ) 0px 0px 2px);
+	legend{
+	  display:none;
+	}
+  label{
+  	font:{
+  		family: $headerFont;
+  		size: em(18px);
+  		weight:300;
+  	}
+    display:block;
+    margin-bottom:em(10px);
+  }
+  
+  .control-label-error{
+    color:$color-copy-danger;
+  }
+  
+  label.radio{
+  	font:{
+  		family: $bodyFont;
+  		size: em(13px);
+  		weight:400;
+  	}
+  }
+  
+  label.checkbox{
+  	font:{
+  		family: $bodyFont;
+  		size: em(13px);
+  		weight:400;
+  	}
+  }
+  .help-block{
+  	font:{
+  		size: em(13px);
+  	}
+    color:#999;
+  }
+  
+  .help-block-error{
+  	font:{
+  		size: em(13px);
+  	}
+    color:$color-copy-danger;
+  }
+  
+  input{
+    border:1px $color-input-border solid;
+    width:100%;
+    @include box-sizing(border-box); 
+    padding:em(10px);
+    margin-bottom:em(5px);
+    outline-width: 0;
+    font:{
+      size:em(13px);
+    }
+  }
+  
+  input:focus,textarea:focus
+  { 
+    background-color:#f5f7f8;
+    border:2px #9abcc9 solid;
+  }
+  
+  input.error{
+    color:$color-input-danger;
+    background-color:$color-input-danger-bg;
+    border:1px $color-input-danger solid;
+  }
+  
+  input.error:focus,textarea.error:focus
+  { 
+    background-color:$color-input-danger-bg;
+    border:2px $color-input-danger solid;
+  }
+  
+  
+  
+  
+  textarea{
+    border:1px $color-input-border solid;
+    width:100%;
+    padding:em(10px);
+    min-height:100px;
+    outline-width: 0;
+     @include box-sizing(border-box); 
+    font:{
+      size:em(13px);
+    }
+  }
+  
+  
+  input[type="radio"] {
+    width:auto;
+    margin-right:em(10px);
+  }
+  
+  input[type="checkbox"]{
+    width:auto;
+    margin-right:em(10px);
+  }
+  
+  
+  .control-group{
+    margin-bottom:em(25px);
+  }
+
+}
+
+
 
 /**clearfix*/
 .cf:before,

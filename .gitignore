@@ -8,3 +8,5 @@ codekit-config.json
 codekit-config.json
 
 *.scssc
+
+*.sassc

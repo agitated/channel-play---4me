@@ -121,7 +121,90 @@
       	<li>ordered list item 5</li>
       	<li>ordered list item 6</li>
       </ol>
-		</div>    
+      <h2>Forms</h2>
+      <h3>Simple form example</h3>
+       <p class="required_notification">* Denotes Required Field</p>
+       <form class="form-horizontal">
+       <fieldset>
+
+       <!-- Form Name -->
+       <legend>Form Name</legend>
+
+       <!-- Text input-->
+       <div class="control-group">
+         <label class="control-label" for="textinput">Text Input</label>
+         <div class="controls">
+           <input id="textinput" name="textinput" type="text" placeholder="placeholder">
+           <p class="help-block">help</p>
+         </div>
+       </div>
+
+       <!-- Text input-->
+       <div class="control-group">
+         <label class="control-label-error" for="textinput2">Text Input Error</label>
+         <div class="controls">
+           <input id="textinput2" name="textinput" type="text" placeholder="placeholder" class="error">
+           <p class="help-block-error">help</p>
+         </div>
+       </div>
+
+       <!-- Password input-->
+       <div class="control-group">
+         <label class="control-label" for="passwordinput">Password Input</label>
+         <div class="controls">
+           <input id="passwordinput" name="passwordinput" type="password" placeholder="placeholder" >
+           <p class="help-block">help</p>
+         </div>
+       </div>
+
+       <!-- Textarea -->
+       <div class="control-group">
+         <label class="control-label" for="textarea">Text Area</label>
+         <div class="controls">                     
+           <textarea id="textarea" name="textarea">default text</textarea>
+         </div>
+       </div>
+
+       <!-- Multiple Radios -->
+       <div class="control-group">
+         <label class="control-label" for="radios">Multiple Radios</label>
+         <div class="controls">
+           <label class="radio" for="radios-0">
+             <input type="radio" name="radios" id="radios-0" value="Option one" checked="checked">
+             Option one
+           </label>
+           <label class="radio" for="radios-1">
+             <input type="radio" name="radios" id="radios-1" value="Option two">
+             Option two
+           </label>
+         </div>
+       </div>
+
+       <!-- Multiple Checkboxes -->
+       <div class="control-group">
+         <label class="control-label" for="checkboxes">Multiple Checkboxes</label>
+         <div class="controls">
+           <label class="checkbox" for="checkboxes-0">
+             <input type="checkbox" name="checkboxes" id="checkboxes-0" value="Option one">
+             Option one
+           </label>
+           <label class="checkbox" for="checkboxes-1">
+             <input type="checkbox" name="checkboxes" id="checkboxes-1" value="Option two">
+             Option two
+           </label>
+         </div>
+       </div>
+
+       
+
+           <button id="button1id" name="button1id" class="button buttonSuccess">Submit</button>
+           <button id="button2id" name="button2id" class="button buttonDanger">Cancel</button>
+   
+      
+
+       </fieldset>
+       </form>
+ </div>
 		<footer class="cf">
 		<div class="footerArrow cf"></div>
 		<div class="section  channels">
