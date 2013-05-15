@@ -86,6 +86,13 @@ $(document).ready(function(){
       var resize_listener;
     	enquire.register("screen and (max-width:480px)", {
 		    
+      setup : function() {
+        console.log("setup init")
+        $('.slider > ul').each(function(i, o){
+          $(o).column_slider("setWidth");
+        }); 
+      },  
+        
 			match : function() {
         console.log("480px matched");
         $('.slider > ul').removeAttr('style');   
@@ -104,9 +111,6 @@ $(document).ready(function(){
         $('.slider').removeAttr('style');  
         $('.nonSlider > h3 > a').removeClass("hideFeed").addClass("showFeed");
         $('.nonSlider > h3').unbind('click');  
-        $('.slider > ul').each(function(i, o){
-          $(o).column_slider("setWidth");
-        });		
         $(window).on('resize', resize_handler);
 			}
 		});
