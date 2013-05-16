@@ -52,11 +52,13 @@ $color-copy-light:#fff;
 $color-copy-dropdown:#d8edff;
 $color-copy-danger:$color-button-danger;
 $color-copy-thumb-tool:$color-copy-button;
+$color-copy-form-help:#999;
 $textShadow: rgba( 0, 0, 0,0.2) 0px 1px 2px;
 
 /* !----  measurement ---- */
 $vSpace:em(20px);
 $hSpace:em(10px);
+$formElementsWidth:80%;
 
 // use for desktop thumbs
 $smlThumbWidth:218px;

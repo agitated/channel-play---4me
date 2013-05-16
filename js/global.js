@@ -53,7 +53,7 @@ $(document).ready(function(){
     	});
     	
       
-      $("#selectbasic").chosen({width: "100%"});
+      $("#selectbasic").chosen();
       
       function sliderInit(){
          console.log("slider init started")

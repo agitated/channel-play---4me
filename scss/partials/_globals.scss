@@ -99,7 +99,7 @@ a{
 }
 .genericHeader{
 	.information{
-		width:80%;
+		width:$formElementsWidth;
 	}
 	p{
 		color: $color-copy-light;
@@ -125,6 +125,8 @@ a{
 
 //Forms
 
+
+
 fieldset{
 	border:none;
   background:rgba(229,239,243,0.3);
@@ -136,12 +138,30 @@ fieldset{
 	legend{
 	  display:none;
 	}
+  
+  h3{
+    display:inline-block;
+    float:left;
+    margin-right:em(10px);
+    margin-bottom:em(25px);
+  }
+  
+  .required_notification{
+    float:right;
+    padding-top:em(15px);
+    color:$color-copy-form-help;
+    font:{
+      size:em(13px);
+    }
+  }
+  
   label{
   	font:{
   		family: $headerFont;
   		size: em(18px);
   		weight:300;
   	}
+    clear:both;
     display:block;
     margin-bottom:em(10px);
   }
@@ -169,7 +189,8 @@ fieldset{
   	font:{
   		size: em(13px);
   	}
-    color:#999;
+    color:$color-copy-form-help;
+    padding-left:2px;
   }
   
   .help-block-error{
@@ -181,7 +202,7 @@ fieldset{
   
   input{
     border:1px $color-input-border solid;
-    width:100%;
+    width:$formElementsWidth;
     @include box-sizing(border-box); 
     padding:em(10px);
     margin-bottom:em(5px);
@@ -192,12 +213,16 @@ fieldset{
   }
   
   select{
-    width:100%;
+    width:$formElementsWidth;
     height:30px !important;
     display:block;
     font:{
       size:em(18px);
     }
+  }
+  
+  .chzn-container{
+    width:$formElementsWidth !important;
   }
   
   
@@ -234,7 +259,7 @@ fieldset{
   
   textarea{
     border:1px $color-input-border solid;
-    width:100%;
+    width:$formElementsWidth;
     padding:em(10px);
     min-height:100px;
     outline-width: 0;

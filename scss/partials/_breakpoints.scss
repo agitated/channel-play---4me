@@ -473,6 +473,22 @@ $break-xlarge: 1180px;*/
 
   fieldset{
     width:100%;
+    input,select,textarea{
+      width:100%;
+    }
+    h3{
+      margin-bottom:em(10px);
+    }
+     .required_notification{
+       float:none;
+       clear:both;
+       padding:0;
+       margin:0 0 em(20px);
+     }
+     .chzn-container{
+       width:100% !important;
+     }
+  
   }
 	
 	.heroCategoryArrow{
