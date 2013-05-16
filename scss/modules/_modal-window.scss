@@ -38,7 +38,7 @@
   
   .header{
   	display:block;
-  	padding: em(20px) em(30px) em(50px);
+  	padding: em(10px) em(30px) em(50px);
   	position: relative;
     background-color: black;
     @include box-sizing(border-box);
@@ -46,7 +46,7 @@
     
     h2{
       color:$color-copy-light;
-      margin-bottom:em(10px);
+      margin-bottom:em(5px);
       @include text-shadow($textShadow);
       font:{
         size:em(40px);

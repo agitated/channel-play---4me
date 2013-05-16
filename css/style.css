@@ -299,8 +299,8 @@ h2 {
   font-weight: 300;
   color: #68b5f7;
   padding: 0.26667em 0 0;
-  margin-bottom: 1em;
-  margin-top: 1.33333em;
+  margin-bottom: 0.66667em;
+  margin-top: 1em;
   clear: both;
   line-height: 1.33333em;
 }
@@ -2189,7 +2189,7 @@ footer .footerSocial a {
 }
 .modal .header {
   display: block;
-  padding: 1.33333em 2em 3.33333em;
+  padding: 0.66667em 2em 3.33333em;
   position: relative;
   background-color: black;
   -webkit-box-sizing: border-box;
@@ -2199,7 +2199,7 @@ footer .footerSocial a {
 }
 .modal .header h2 {
   color: white;
-  margin-bottom: 0.66667em;
+  margin-bottom: 0.33333em;
   text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
   font-size: 2.66667em;
 }
@@ -2734,7 +2734,7 @@ $break-xlarge: 1180px;*/
   }
   .modal .header {
     padding: 0.66667em 0.66667em 1.33333em;
-    background: url("../images/bg_header.jpg") transparent no-repeat left 80%;
+    background: url("../images/bg_header.jpg") transparent no-repeat -15px 87%;
   }
   .modal .header h2 {
     font-size: 1.73333em;

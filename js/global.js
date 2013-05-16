@@ -74,7 +74,7 @@ $(document).ready(function(){
         });
       });
       }
-
+      
       sliderInit();
       
       var resize_handler = function(){
