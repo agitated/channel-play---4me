@@ -438,6 +438,19 @@ fieldset input {
   outline-width: 0;
   font-size: 0.86667em;
 }
+fieldset select {
+  width: 100%;
+  height: 30px !important;
+  display: block;
+  font-size: 1.2em;
+}
+fieldset .mycontainer {
+  height: 120px;
+}
+fieldset .mycontainer .chzn-container-multi .chzn-choices {
+  height: 120px !important;
+  overflow-y: auto;
+}
 fieldset input:focus, fieldset textarea:focus {
   background-color: #f5f7f8;
   border: 2px #9abcc9 solid;
@@ -552,10 +565,10 @@ fieldset .control-group {
 
 .buttonSuccess {
   color: white;
-  background: #5ecc9a;
+  background: #3fa911;
 }
 .buttonSuccess:hover {
-  background: #3e8866;
+  background: #2a700b;
 }
 
 .buttonIcon {

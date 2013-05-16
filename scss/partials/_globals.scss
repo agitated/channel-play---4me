@@ -191,6 +191,26 @@ fieldset{
     }
   }
   
+  select{
+    width:100%;
+    height:30px !important;
+    display:block;
+    font:{
+      size:em(18px);
+    }
+  }
+  
+  
+  .mycontainer {
+      height: 120px;
+  }
+
+  .mycontainer .chzn-container-multi .chzn-choices {
+      height: 120px !important;
+      overflow-y: auto;
+  }
+  
+  
   input:focus,textarea:focus
   { 
     background-color:#f5f7f8;
