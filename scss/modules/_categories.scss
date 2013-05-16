@@ -2,6 +2,7 @@
 #categories{
 	position:relative;
 	left:0;
+    top:-10px;
 	display:none;
 	vertical-align:middle;
 	padding:em(15px) em(10px);
@@ -17,6 +18,7 @@
 	margin-left:em(15px);
 	position:absolute;
 	width:200px;
+  margin-top:5px;
 	&:hover{
 		background: url("../images/sprite_arrows.png") $color-brand 92% -87px no-repeat;
 		@include ceaser-transition($easeOutQuint, background-color, 400ms);
