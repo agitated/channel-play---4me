@@ -41,6 +41,7 @@ h2{
 	margin-bottom:em(15px);
 	margin-top:em(20px);
   clear:both;
+  line-height:em(20px);
 }
 
 h2:first-child{
@@ -287,7 +288,12 @@ fieldset{
 
 }
 
-
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
 
 /**clearfix*/
 .cf:before,

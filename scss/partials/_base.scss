@@ -1,4 +1,5 @@
 @import "compass/css3";
+@import "compass/css3/transition";
 
 //partials
 @import "partials/normalize";
@@ -38,6 +39,8 @@ $color-video-tools-bg:#0a2335;
 $color-input-border:#e7e7e7;
 $color-input-danger:$color-button-danger;
 $color-input-danger-bg:#ffe3e3;
+$color-modal-bg:rgba(0,0,0,0.8);
+$color-modal-contentbg:#f8f7f7;
 
 
 //copy

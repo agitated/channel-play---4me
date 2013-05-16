@@ -470,6 +470,52 @@ $break-xlarge: 1180px;*/
 			width:100%;
 		}
 	}
+  
+  .modal{
+    width:90%;
+    
+    fieldset,form{
+       @include box-sizing(border-box); 
+      width:100%;
+      padding:em(5px);
+    }
+    
+    fieldset{
+      .control-group{
+        margin-bottom:em(10px);
+      }
+    }
+    
+    button{ 
+      width:100%;
+      margin-bottom:em(10px);
+    }
+    
+    .buttonFacebook{
+      width:100%;
+      margin-bottom:em(10px);
+      text-align:center;
+    }
+   
+    .header{
+      padding:em(10px) em(10px) em(20px);
+      background: url("../images/bg_header.jpg") transparent no-repeat left 80%;
+      h2{
+        font:{
+          size:em(26px);
+        }
+      }
+      p{
+        font:{
+          size:em(14px);
+        }
+        margin-bottom:em(15px);
+        line-height:em(25px);
+      }
+      
+    }
+    
+  }
 
   fieldset{
     width:100%;

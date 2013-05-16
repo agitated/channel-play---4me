@@ -51,9 +51,15 @@ $(document).ready(function(){
         		$('.mSearchForm').slideToggle();
         	});
     	});
-    	
       
-      $("#selectbasic").chosen();
+      
+      $('#my-modal').modal({
+        animation : 'slideDown',
+        backdropAnimation : true,
+        backdropAnimationDuration : 100,
+        backdropZindex: 999
+      });
+      
       
       function sliderInit(){
          console.log("slider init started")

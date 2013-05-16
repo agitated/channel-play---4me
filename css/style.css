@@ -302,6 +302,7 @@ h2 {
   margin-bottom: 1em;
   margin-top: 1.33333em;
   clear: both;
+  line-height: 1.33333em;
 }
 
 h2:first-child {
@@ -502,6 +503,13 @@ fieldset input[type="checkbox"] {
 }
 fieldset .control-group {
   margin-bottom: 1.66667em;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 /**clearfix*/
@@ -2133,6 +2141,73 @@ footer .footerSocial a {
   display: inline-block;
 }
 
+#modal-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  background: url("../images/background.png") #f8f7f7 repeat left top;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  width: 650px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.modal form, .modal fieldset {
+  width: 100%;
+  background: transparent;
+  padding: 0 1em 1.33333em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.modal .buttonFacebook {
+  background: url("../images/button_facebook.png") transparent no-repeat left top;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0.66667em 1.33333em 0.66667em 2.33333em;
+  display: inline-block;
+  text-transform: uppercase;
+  border: none;
+  color: white;
+  font-size: 0.93333em;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+}
+.modal .buttonFacebook:hover {
+  background: url("../images/button_facebook.png") transparent no-repeat left -52px;
+}
+.modal .header {
+  display: block;
+  padding: 1.33333em 2em 3.33333em;
+  position: relative;
+  background-color: black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url("../images/bg_header.jpg") transparent no-repeat left 95%;
+}
+.modal .header h2 {
+  color: white;
+  margin-bottom: 0.66667em;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+  font-size: 2.66667em;
+}
+.modal .header p {
+  color: white;
+  margin-bottom: 0.33333em;
+  padding: 0;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+}
+
 /* Breakpoints for mixin
 $break-xsmall: 360px;
 $break-small: 480px;
@@ -2631,6 +2706,41 @@ $break-xlarge: 1180px;*/
 
   .genericHeader .information {
     width: 100%;
+  }
+
+  .modal {
+    width: 90%;
+  }
+  .modal fieldset, .modal form {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.33333em;
+  }
+  .modal fieldset .control-group {
+    margin-bottom: 0.66667em;
+  }
+  .modal button {
+    width: 100%;
+    margin-bottom: 0.66667em;
+  }
+  .modal .buttonFacebook {
+    width: 100%;
+    margin-bottom: 0.66667em;
+    text-align: center;
+  }
+  .modal .header {
+    padding: 0.66667em 0.66667em 1.33333em;
+    background: url("../images/bg_header.jpg") transparent no-repeat left 80%;
+  }
+  .modal .header h2 {
+    font-size: 1.73333em;
+  }
+  .modal .header p {
+    font-size: 0.93333em;
+    margin-bottom: 1em;
+    line-height: 1.66667em;
   }
 
   fieldset {

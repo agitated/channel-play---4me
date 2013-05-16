@@ -1,0 +1,65 @@
+#modal-backdrop {
+  background: $color-modal-bg;
+}
+
+.modal {
+  background: url("../images/background.png") $color-bg repeat left top;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,.3);
+  width:650px;
+  @include box-sizing(border-box); 
+  
+  form,fieldset{
+    width:100%;
+    background:transparent;
+    padding:0 em(15px) em(20px);
+    @include box-shadow(none)
+  }
+  
+  .buttonFacebook{
+    background: url("../images/button_facebook.png") transparent no-repeat left top;
+    @include border-radius(4px);
+    @include box-sizing(border-box); 
+    padding:em(10px) em(20px) em(10px) em(35px);
+    display:inline-block;
+  	text-transform: uppercase;
+    border:none;
+    color:$color-copy-light;
+  	font:{
+  		size:em(14px);
+  		family:$headerFont;
+  		weight:700;
+  	}
+    &:hover{
+      background: url("../images/button_facebook.png") transparent no-repeat left -52px;
+    }
+  }
+  
+  .header{
+  	display:block;
+  	padding: em(20px) em(30px) em(50px);
+  	position: relative;
+    background-color: black;
+    @include box-sizing(border-box);
+    background: url("../images/bg_header.jpg") transparent no-repeat left 95%;
+    
+    h2{
+      color:$color-copy-light;
+      margin-bottom:em(10px);
+      @include text-shadow($textShadow);
+      font:{
+        size:em(40px);
+        
+      };
+    }
+  
+    p{
+      color:$color-copy-light;
+      margin-bottom:em(5px);
+      padding:0;
+      @include text-shadow($textShadow);
+    }  
+  }
+}
+
