@@ -255,9 +255,6 @@ fieldset{
     border:2px $color-input-danger solid;
   }
   
-  
-  
-  
   textarea{
     border:1px $color-input-border solid;
     width:$formElementsWidth;
@@ -270,7 +267,6 @@ fieldset{
     }
   }
   
-  
   input[type="radio"] {
     width:auto;
     margin-right:em(10px);
@@ -280,7 +276,6 @@ fieldset{
     width:auto;
     margin-right:em(10px);
   }
-  
   
   .control-group{
     margin-bottom:em(25px);

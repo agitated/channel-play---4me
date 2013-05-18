@@ -98,19 +98,19 @@ $(document).ready(function(){
         $('.slider > ul').removeAttr('style');   
         $(window).off('resize', resize_handler);
         console.log( $('.slider > ul').attr('style'));
-				$('.nonSlider > h3').click(
+				$('.feed > h3').click(
 		      function(e){
             console.log("h3 clicked");
 	       		e.preventDefault();
 	        	$(this).children("a").toggleClass("hideFeed");
-	        	$(this).parent().siblings(".slider").slideToggle();
+	        	$(this).siblings(".accordian").slideToggle();
 		    	});
 			},
 			unmatch : function() {
         console.log("larger than 480px matched");
         $('.slider').removeAttr('style');  
-        $('.nonSlider > h3 > a').removeClass("hideFeed").addClass("showFeed");
-        $('.nonSlider > h3').unbind('click');  
+        $('.feed > h3 > a').removeClass("hideFeed").addClass("showFeed");
+        $('.feed > h3').unbind('click');  
         $(window).on('resize', resize_handler);
 			}
 		});

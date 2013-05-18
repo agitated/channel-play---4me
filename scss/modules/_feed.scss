@@ -175,7 +175,7 @@
 	}
 }
 
-.slider,.nonSlider{display:block;padding:2px 0;position:relative;@include box-sizing(border-box); }
+.slider{ width:100%;overflow:hidden;display:block;padding:2px 0;position:relative;@include box-sizing(border-box); }
 
 .lastFeed{
 	border-bottom: 1px $color-divider solid;

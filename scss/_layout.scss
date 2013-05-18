@@ -23,7 +23,7 @@
 /* !-------ON DEMAND------- */
 .onDemand{
 	display:block;
-	padding: em(15px) em(15px) 0 em(15px) ;
+	padding: 0 em(15px) 0 em(15px) ;
 	position: relative;
 	h3{
 		text-transform: uppercase;
@@ -48,7 +48,7 @@
 }
 
 #searchResults{
-	padding: 0 em(15px) 0 em(15px) ;
+	padding: em(15px) em(15px) 0 em(15px) ;
 }
 
 
