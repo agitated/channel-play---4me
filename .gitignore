@@ -10,3 +10,7 @@ codekit-config.json
 *.scssc
 
 *.sassc
+
+*.scssc
+
+*.DS_Store
