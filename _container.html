@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">    <!-- So that mobile webkit will display zoomed in -->
+    <meta name="format-detection" content="telephone=no"> <!-- disable auto telephone linking in iOS -->
+
+    <title>Antwort - responsive Email Layout</title>
+    <style type="text/css">
+
+        /* Resets: see reset.css for details */
+        .ReadMsgBody { width: 100%; background-color: #ebebeb;}
+        .ExternalClass {width: 100%; background-color: #ebebeb;}
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height:100%;}
+        body {-webkit-text-size-adjust:none; -ms-text-size-adjust:none;}
+        body {margin:0; padding:0;}
+        table {border-spacing:0;border-left:1px #dbdbdb solid;border-right:1px #dbdbdb solid;}
+        table td {border-collapse:collapse;}
+        .yshortcuts a {border-bottom: none !important;}
+        a:link{border-bottom:1px #42aff7 solid;text-decoration:none}
+
+        /* Give content more room on mobile */
+        @media screen and (max-width: 600px) {
+          table[class="container"] {
+              width: 100% !important;
+          }
+          body,html{
+            padding:0 !important;
+          }
+          a:link{border-bottom:1px #42aff7 solid;text-decoration:none}
+          
+          td[class="footer"] {
+              padding-left: 12px !important;
+              padding-right: 12px !important;
+              line-height:30px !important;
+              
+          }
+          
+            td[class="container-padding"] {
+                padding-left: 12px !important;
+                padding-right: 12px !important;
+                
+            }
+            td[class="force-col"] {
+                  display: block;
+                  width:100% !important;
+                  padding-left: 12px !important;
+                  padding-right: 12px !important;
+                  text-align:left !important;
+              }
+            
+            td[class="headercell"] {
+                background: url("images/edm_mobile_header.jpg") transparent repeat-x top left;
+                width: 325px !important;
+                height: 275px !important;
+            }
+            td[class="headercell"] img { 
+                display: none; 
+            }
+         }
+
+    </style>
+</head>
+<body style="margin:0; padding:20px 0 ;" bgcolor="#ebebeb" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+
+<!-- 100% wrapper (grey background) -->
+<table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0" bgcolor="#ebebeb">
+  <tr>
+    <td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #ebebeb;">
+
+      <!-- 600px container (white background) -->
+      <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#f4f3f3" style="background-color: #f4f3f3;">
+        <tr>
+             <td class="headercell">
+                 <img src="images/edm_headeer.jpg" border="0" width="600" height="303" alt="Edm Headeer">
+           </td>
+          </tr>
+        <tr>
+          <td class="container-padding" bgcolor="#f4f3f3" style="background-color: #f4f3f3; padding-left: 30px; padding-right: 30px;padding-bottom:20px;font-size: 15px; line-height: 24px; font-family: Helvetica, sans-serif; color: #333;">
+            <br>
+
+            <!-- ### BEGIN CONTENT ### -->
+            <div style="font-weight: lighter; font-size: 35px; line-height: 30px; color: #379df4">
+           Welcome Chris
+            </div><br>
+            <div style="font-weight: lighter; font-size: 24px; line-height: 30px; color: #2a3a46">
+          Thank you for registering with 4ME
+            </div><br>
+            Here are your login details:
+            <br> <br>
+            E-mail address: <a style="color:#2a3a46 !important; border-bottom:1px #42aff7 solid;text-decoration:none" href="mailto:chris@company.com">chris@company.com </a>
+            <br> <br>
+            To make your experience even more enjoyable, we’ll email you from time to time to let you know about our latest offers and new products.<br> <br>
+            In the meantime, why not check out our website where you’ll find some of the best brands from Singapore and around the globe.
+             <br> <br>
+            <strong>Your Retail Therapy Team</strong>
+            <br>
+           
+            <!-- ### END CONTENT ### -->
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table border="0" width="100%" cellpadding="0" cellspacing="0" class="container" bgcolor="#3a4851" style="background-color: #3a4851;">
+              <tr>
+                <td width="202px" class="force-col" style=" vertical-align:middle;padding-left: 30px;  padding-top:20px;padding-bottom:10px;font-size: 15px; line-height: 24px; font-family: Helvetica, sans-serif; color: #cccccc;">
+                       <img src="images/edm_video_button.jpg" width="202" height="38" alt="Edm Video Button">
+                 </td>
+                 <td width="350px" class="force-col" style=" text-align:right;vertical-align:middle; padding-right: 30px; padding-top:20px;padding-bottom:20px;font-size: 15px; line-height: 24px; font-family: Helvetica, sans-serif; color: #cccccc;">
+                   <span style="padding-right:10px;" >Keep in touch</span><img style="padding-right:10px;vertical-align:middle" src="images/edm_facebook.png" width="40" height="38" alt="Edm Facebook"><img style="vertical-align:middle" src="images/edm_twitter.png" width="40" height="38" alt="Edm Twitter">
+                 </td>
+               </tr>
+                 <tr>
+                 <td class="footer" colspan="2" width="100%" style=" vertical-align:middle;padding-left: 30px;  padding-right: 30px;padding-bottom:20px;font-size: 12px; line-height:20px; font-family: Helvetica, sans-serif; color: #cccccc;">
+                 This email was sent to you as a registered user of ___________ <br>
+                 This email was sent by: Brand New Media, The Pavilion, 201 Miller Street, North Sydney NSW 2060  <br>
+                 © 2013 <a style="color:#ffffff;border-bottom:1px #42aff7 solid;text-decoration:none" href="#">brandnewmedia.com.au</a> | <a  style="color:#ffffff;border-bottom:1px #42aff7 solid;text-decoration:none" href="#">contact us</a> | <a style="color:#ffffff;border-bottom:1px #42aff7 solid;text-decoration:none" href="#">terms and conditions</a> <br><br>
+                 <unsubscribe><span style="color:#ffffff;border-bottom:1px #42aff7 solid;text-decoration:none">unsubscribe</span></unsubscribe>
+                 </td>
+                </tr>
+              </table>
+          </td>
+        </tr>
+      </table>
+      <!--/600px container -->
+
+    </td>
+  </tr>
+</table>
+<!--/100% wrapper-->
+
+</body>
+</html>
+
