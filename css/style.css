@@ -2469,8 +2469,8 @@ $break-xlarge: 1180px;*/
   }
 
   .categoryHeroBg {
-    max-width: 117%;
-    width: 117%;
+    height: 102%;
+    max-height: 102%;
     max-width: none;
     width: auto;
   }
