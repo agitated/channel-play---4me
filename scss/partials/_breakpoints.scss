@@ -27,12 +27,13 @@ $break-xlarge: 1180px;*/
 	    right:-2%;
 		@include addBlur;
 	}
-	.categoryHeroBg{
+	.categoryHeroBg,{
 		height: 102%;
 	    max-height: 102%;
 	    max-width: none;
 	    width: auto;
 	}
+  
 	.heroVideoBg{
 		height: 102%;
 	    max-height: 102%;
@@ -142,7 +143,7 @@ $break-xlarge: 1180px;*/
 		@include addBlur;
 	}
 	
-	.categoryHeroBg{
+	.categoryHeroBg,{
 		height: 102%;
 	    max-height: 102%;
 	    max-width: none;
@@ -260,7 +261,7 @@ $break-xlarge: 1180px;*/
 		@include addBlur;
 	}
 	
-	.categoryHeroBg{
+	.categoryHeroBg,{
 		height: 100%;
 	    max-height: 100%;
 	    max-width: none;
@@ -426,7 +427,7 @@ $break-xlarge: 1180px;*/
 			padding:em(10px);
 		}
 	}
-	.categoryHeroBg{
+	.categoryHeroBg,{
 		height: 116%;
 	    max-height: 116%;
 	    max-width: none;
@@ -768,16 +769,23 @@ $break-xlarge: 1180px;*/
 	.onNext{
 		padding: em(20px) em(10px) 0 ;
 	}
-	.categoryHeroBg{
-		height: 110%;
-	    max-height: 110%;
-	    top:-28px;
+	.categoryHeroBg,{
+		height: 113%;
+	    max-height: 113%;
+	    top:-38px;
+      right:-10px;
 	}
 	.categoryInformation{
 		padding: em(120px) $hSpace 0 ;
 		h1{
 			font-size: em(30px)
 		}
+    p{
+      line-height:em(20px);
+      font:{
+        size:em(14px);
+      }
+    }
 	}
 
 	.videoFull{

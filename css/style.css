@@ -2949,9 +2949,10 @@ $break-xlarge: 1180px;*/
   }
 
   .categoryHeroBg {
-    height: 110%;
-    max-height: 110%;
-    top: -28px;
+    height: 113%;
+    max-height: 113%;
+    top: -38px;
+    right: -10px;
   }
 
   .categoryInformation {
@@ -2959,6 +2960,10 @@ $break-xlarge: 1180px;*/
   }
   .categoryInformation h1 {
     font-size: 2em;
+  }
+  .categoryInformation p {
+    line-height: 1.33333em;
+    font-size: 0.93333em;
   }
 
   .videoFull .play {
