@@ -1060,18 +1060,14 @@ footer {
 .menuItems li:hover > ul {
   display: block;
 }
-.menuItems li:hover a {
+.menuItems li:hover a:first-child {
   -webkit-border-radius: 4px 4px 0 0;
   -moz-border-radius: 4px 4px 0 0;
   -ms-border-radius: 4px 4px 0 0;
   -o-border-radius: 4px 4px 0 0;
   border-radius: 4px 4px 0 0;
   color: white;
-  background: url("../images/sprite_arrows.png") 92% -92px no-repeat, -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(0%, #379df4), color-stop(100%, #1f2b35));
-  background: url("../images/sprite_arrows.png") 92% -92px no-repeat, -webkit-linear-gradient(bottom, #379df4 0%, #1f2b35 100%);
-  background: url("../images/sprite_arrows.png") 92% -92px no-repeat, -moz-linear-gradient(bottom, #379df4 0%, #1f2b35 100%);
-  background: url("../images/sprite_arrows.png") 92% -92px no-repeat, -o-linear-gradient(bottom, #379df4 0%, #1f2b35 100%);
-  background: url("../images/sprite_arrows.png") 92% -92px no-repeat, linear-gradient(bottom, #379df4 0%, #1f2b35 100%);
+  background: url("../images/sprite_arrows.png") #202c35 92% -92px no-repeat;
   -webkit-transition: linear-gradient 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000);
   -webkit-transition-delay: 0ms;
   -moz-transition: linear-gradient 200ms cubic-bezier(0.165, 0.840, 0.440, 1.000) 0ms;
@@ -1085,7 +1081,11 @@ footer {
   -ms-border-radius: 0 6px 6px 6px;
   -o-border-radius: 0 6px 6px 6px;
   border-radius: 0 6px 6px 6px;
-  background-color: #3699ed;
+  background: -webkit-linear-gradient(0deg, #12191e 0%, #202c35 100%);
+  background: -moz-linear-gradient(0deg, #12191e 0%, #202c35 100%);
+  background: -o-linear-gradient(0deg, #12191e 0%, #202c35 100%);
+  background: linear-gradient(0deg, #12191e 0%, #202c35 100%);
+  background-color: #202c35;
   display: block;
   float: left;
   padding: 1em 1em 0 1em;
@@ -1093,9 +1093,9 @@ footer {
   min-width: 200px;
   margin: 0;
   display: none;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
-  box-shadow: rgba(0, 0, 0, 0.4) 3px 3px 3px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 6px;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 6px;
 }
 .dropDown li {
   float: left;
@@ -1116,13 +1116,14 @@ footer {
   float: none;
 }
 .dropDown li a {
+  color: #999fa5 !important;
   background: none !important;
   padding: 0;
   margin: 0;
   width: 100%;
 }
 .dropDown li a:hover {
-  color: #333;
+  color: white !important;
 }
 
 /*  !--------- MOBILE MENU ---------  */
