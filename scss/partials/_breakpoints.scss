@@ -261,8 +261,8 @@ $break-xlarge: 1180px;*/
 	}
 	
 	.categoryHeroBg{
-		height: 102%;
-	    max-height: 102%;
+		height: 100%;
+	    max-height: 100%;
 	    max-width: none;
 	    width: auto;
 	
@@ -427,11 +427,11 @@ $break-xlarge: 1180px;*/
 		}
 	}
 	.categoryHeroBg{
-		height: 130%;
-	    max-height: 130%;
+		height: 116%;
+	    max-height: 116%;
 	    max-width: none;
 	    width: auto;
-	    top:-60px;
+	    top:-50px;
 	}
 	
 	.heroVideoBg,.heroHomeBg,.heroSeriesBg{
@@ -771,7 +771,7 @@ $break-xlarge: 1180px;*/
 	.categoryHeroBg{
 		height: 110%;
 	    max-height: 110%;
-	    top:-10px;
+	    top:-28px;
 	}
 	.categoryInformation{
 		padding: em(120px) $hSpace 0 ;
