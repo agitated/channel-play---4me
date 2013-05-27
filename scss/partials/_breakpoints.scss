@@ -450,9 +450,10 @@ $break-xlarge: 1180px;*/
 	}
 	
 	.categoryInformation{
-		padding-top: em(150px);
+		padding-top: em(110px);
 		padding-left: $vSpace;
-		width:100%;
+		width:60%;
+  
 	}
 	
 	.genericHeader{
@@ -773,19 +774,17 @@ $break-xlarge: 1180px;*/
 	.categoryHeroBg,{
 		height: 115%;
 	    max-height: 115%;
-	    top:-35px;
+	    top:-30px;
       right:-10px;
 	}
 	.categoryInformation{
 		padding: em(120px) $hSpace 0 ;
+    width:100%;
 		h1{
-			font-size: em(30px)
+			font-size: em(40px)
 		}
     p{
-      line-height:em(20px);
-      font:{
-        size:em(14px);
-      }
+      display:none;
     }
 	}
 

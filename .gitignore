@@ -14,3 +14,6 @@ codekit-config.json
 *.scssc
 
 *.DS_Store
+*.psd
+
+images/channel_bg.psd

@@ -2661,9 +2661,9 @@ $break-xlarge: 1180px;*/
   }
 
   .categoryInformation {
-    padding-top: 10em;
+    padding-top: 7.33333em;
     padding-left: 1.33333em;
-    width: 100%;
+    width: 60%;
   }
 
   .genericHeader .information {
@@ -2952,19 +2952,19 @@ $break-xlarge: 1180px;*/
   .categoryHeroBg {
     height: 115%;
     max-height: 115%;
-    top: -35px;
+    top: -30px;
     right: -10px;
   }
 
   .categoryInformation {
     padding: 8em 0.66667em 0;
+    width: 100%;
   }
   .categoryInformation h1 {
-    font-size: 2em;
+    font-size: 2.66667em;
   }
   .categoryInformation p {
-    line-height: 1.33333em;
-    font-size: 0.93333em;
+    display: none;
   }
 
   .videoFull .play {
