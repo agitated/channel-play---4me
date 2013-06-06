@@ -27,12 +27,13 @@ $break-xlarge: 1180px;*/
 	    right:-2%;
 		@include addBlur;
 	}
-	.categoryHeroBg{
+	.categoryHeroBg,{
 		height: 102%;
 	    max-height: 102%;
 	    max-width: none;
 	    width: auto;
 	}
+  
 	.heroVideoBg{
 		height: 102%;
 	    max-height: 102%;
@@ -142,12 +143,13 @@ $break-xlarge: 1180px;*/
 		@include addBlur;
 	}
 	
-	.categoryHeroBg{
+	.categoryHeroBg,{
 		height: 102%;
 	    max-height: 102%;
 	    max-width: none;
 	    width: auto;
 	}
+
 	
 	.heroVideoBg{
 		height: 102%;
@@ -249,7 +251,7 @@ $break-xlarge: 1180px;*/
 		width: 100%;
 	}
 	.categoryInformation{
-			padding-top: em(160px);
+			padding-top: em(100px);
 	}
 	.heroHomeBg,.heroSeriesBg{
 		height: 142%;
@@ -260,9 +262,9 @@ $break-xlarge: 1180px;*/
 		@include addBlur;
 	}
 	
-	.categoryHeroBg{
-		height: 102%;
-	    max-height: 102%;
+	.categoryHeroBg,{
+		height: 100%;
+	    max-height: 100%;
 	    max-width: none;
 	    width: auto;
 	
@@ -426,12 +428,12 @@ $break-xlarge: 1180px;*/
 			padding:em(10px);
 		}
 	}
-	.categoryHeroBg{
-		height: 130%;
-	    max-height: 130%;
+	.categoryHeroBg,{
+		height: 116%;
+	    max-height: 116%;
 	    max-width: none;
 	    width: auto;
-	    top:-60px;
+	    top:-45px;
 	}
 	
 	.heroVideoBg,.heroHomeBg,.heroSeriesBg{
@@ -448,9 +450,13 @@ $break-xlarge: 1180px;*/
 	}
 	
 	.categoryInformation{
-		padding-top: em(150px);
+		padding-top: em(110px);
 		padding-left: $vSpace;
-		width:100%;
+		width:80%;
+    p{
+      margin-bottom:em(5px);
+    }
+  
 	}
 	
 	.genericHeader{
@@ -768,16 +774,21 @@ $break-xlarge: 1180px;*/
 	.onNext{
 		padding: em(20px) em(10px) 0 ;
 	}
-	.categoryHeroBg{
-		height: 110%;
-	    max-height: 110%;
-	    top:-10px;
+	.categoryHeroBg,{
+		height: 115%;
+	    max-height: 115%;
+	    top:-30px;
+      right:-10px;
 	}
 	.categoryInformation{
 		padding: em(120px) $hSpace 0 ;
+    width:100%;
 		h1{
-			font-size: em(30px)
+			font-size: em(40px)
 		}
+    p{
+      display:none;
+    }
 	}
 
 	.videoFull{

@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
 				"righ",
 				"rightArrow"
 			],
@@ -30,10 +38,6 @@
 			[
 				"color-cop",
 				"color-copy-default"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"bore",
@@ -119,6 +123,10 @@
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"pack",
 				"Package Control: Install Package"
 			],
@@ -155,10 +163,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"insta",
-				"Package Control: Install Package"
-			],
-			[
 				"instal",
 				"Package Control: Install Package"
 			],
@@ -188,12 +192,15 @@
 	},
 	"file_history":
 	[
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/_layout.scss",
+		"/Users/cagiasotis/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/cagiasotis/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/cagiasotis/Library/Application Support/Sublime Text 2/Packages/User/trailing_spaces.sublime-settings",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/index.haml",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/partials/_globals.scss",
+		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/generic.html",
 		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/partials/_breakpoints.scss",
 		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/homepage.html",
-		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/index.haml",
-		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/_layout.scss",
-		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/generic.html",
-		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/partials/_globals.scss",
 		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/js/global.js",
 		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/scss/modules/_favourites.scss",
 		"/Users/cagiasotis/Documents/projects/htdocs/channel-play---4me/video_v2.html",
