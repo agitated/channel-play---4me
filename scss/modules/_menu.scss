@@ -3,7 +3,7 @@
 #menu{
 	.logo{
 		background: url("../images/menu_divider.png") transparent no-repeat right 12px;
-		padding:10px 15px 5px 5px;	
+		padding:10px 15px 5px 5px;
 		margin:0;
 		display:inline-block;
 	}
@@ -14,10 +14,16 @@
 	@include box-shadow(rgba( 0, 0, 0,0.7 ) 0px 0px 3px);
 	z-index: 100;
 	position: relative;
-	
+
 	a{border: none;
 	}
 
+}
+
+.logoLink{
+	&:hover{
+		background:none;
+	}
 }
 
 #searchMenu{
@@ -48,7 +54,7 @@
 	    float:right;
 	    border:none;
 		background: url("../images/icon_search.png") transparent no-repeat center 5px;
-		
+
 	}
 	form {
 	    height: 30px;
@@ -66,7 +72,7 @@
 	margin:0;
 	padding:0;
 	list-style:none;
-	@include box-sizing(border-box); 
+	@include box-sizing(border-box);
 	li{
 		a{
 			font:{
@@ -79,14 +85,14 @@
 			background: url("../images/sprite_arrows.png") transparent no-repeat 92% 5px;
 			padding:em(5px) em(40px) em(12px) em(15px);
 			display:inline-block;
-			border:none;		
-		}	
+			border:none;
+		}
 		float:left;
 		text-transform:uppercase;
 		display:inline-block;
 		padding: 0;
 		background: url("../images/menu_divider.png") transparent no-repeat right 0;
-		@include box-sizing(border-box); 
+		@include box-sizing(border-box);
 		&:hover > ul {
 			display: block;
 		}
@@ -168,7 +174,7 @@
 			background: transparent;
 		}
 	}
-	
+
 }
 .mMenu,.mSearch{
 	height: 55px;

@@ -34,7 +34,7 @@
 		</nav>
 		<header class="genericHeader">
 			<nav class="cf" id="menu">
-				<img class="logo" src="images/logo.png"/>
+				<a class="logoLink" href="homepage.html"><img class="logo" src="images/logo.png"></a>
 				<ul class="menuItems cf">
 					<li><a href="#">CHANNELS</a>
 						<ul class="dropDown">
@@ -69,8 +69,11 @@
 							</li>
 						</ul>
 					</li>
-					<li><a href="#">YOUR ACCOUNT</a></li>
-					<li><a href="#">SHARE</a></li>
+					<li><a href="#">YOUR ACCOUNT</a>
+            <ul class="dropDown">
+              <li><a href="modalwindows.html">LOGIN</a></li>
+            </ul>
+          </li>
 				</ul>
 				<div id="searchMenu">
 					<form action="/search" id="search-form" method="get" target="_top">
@@ -82,11 +85,11 @@
 			<div class="information cf">
   			<div class="breadCrumb cf">
   				<ul>
-  					<li><a href="index.html">Home</a></li>
+  					<li><a href="homepage.html">Home</a></li>
   				</ul>
   			</div>
-  			<div class="details cf">	
-  				<h1>Main header</h1>		
+  			<div class="details cf">
+  				<h1>Main header</h1>
   				<p>Introduction paragraph if needed</p>
   			</div>
   		</div>
@@ -124,7 +127,7 @@
       	<li>ordered list item 6</li>
       </ol>
       <h2>Forms</h2>
-     
+
        <form>
        <fieldset>
          <h3>Simple form example</h3>
@@ -158,7 +161,7 @@
            <p class="help-block">help</p>
          </div>
        </div>
-       
+
        <!-- Select Basic -->
        <div class="control-group">
          <label class="control-label" for="selectbasic">Select Basic</label>
@@ -173,7 +176,7 @@
        <!-- Textarea -->
        <div class="control-group">
          <label class="control-label" for="textarea">Text Area</label>
-         <div class="controls">                     
+         <div class="controls">
            <textarea id="textarea" name="textarea">default text</textarea>
          </div>
        </div>
@@ -208,12 +211,12 @@
          </div>
        </div>
 
-       
+
 
            <button id="button1id" name="button1id" class="button buttonSuccess">Submit</button>
            <button id="button2id" name="button2id" class="button buttonDanger">Cancel</button>
-   
-      
+
+
 
        </fieldset>
        </form>
@@ -279,7 +282,7 @@
 		<div class="siteInfo">
 			<p>© 2013 brandnewmedia.com.au</p>
 		</div>
-		
+
 		<div class="mobInfo">
 				<a href="#" class="button buttonArrow">VIEW OUR OTHER CHANNELS</a>
 				<a href="#" class="button buttonArrow">Register</a>
@@ -306,4 +309,3 @@
   </script>
 </body>
 </html>
-  
