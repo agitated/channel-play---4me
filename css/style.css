@@ -984,6 +984,10 @@ footer {
   border: none;
 }
 
+.logoLink:hover {
+  background: none;
+}
+
 #searchMenu {
   position: relative;
   float: right;
