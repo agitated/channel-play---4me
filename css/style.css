@@ -1670,6 +1670,27 @@ footer .footerSocial a {
   background: url("../images/epg_line.gif") transparent no-repeat left 0;
 }
 
+.epgItem {
+  border-right: 1px #ececec solid;
+}
+.epgItem .epgTitle {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.epgItem .epgDesc {
+  font-size: 0.8em;
+  padding-right: 10px;
+  color: #666;
+}
+.epgItem .epgStartTime {
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  color: #999fa5;
+}
+
 #epg {
   display: block;
   position: relative;
