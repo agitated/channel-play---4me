@@ -712,7 +712,7 @@ fieldset .control-group {
 /* !-------ON DEMAND------- */
 .onDemand {
   display: block;
-  padding: 0 1em 0 1em;
+  padding: 1em 1em 0 1em;
   position: relative;
 }
 .onDemand h3 {
@@ -1702,6 +1702,9 @@ footer .footerSocial a {
 .epgItemDark {
   border-right: 1px rgba(133, 133, 133, 0.3) solid;
 }
+.epgItemDark:last-child {
+  border: none;
+}
 .epgItemDark .epgTitle {
   font-size: 1em;
   margin: 0;
@@ -1743,16 +1746,6 @@ footer .footerSocial a {
   margin-top: 1.33333em;
 }
 
-#epgOverlay {
-  display: block;
-  position: relative;
-  left: -20px;
-  padding: 20px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.3);
-  width: 100%;
-}
-
 #epg {
   display: block;
   position: relative;
@@ -1772,6 +1765,19 @@ footer .footerSocial a {
   -webkit-box-shadow: #e6e6e6 0px 0px 0px 2px;
   -moz-box-shadow: #e6e6e6 0px 0px 0px 2px;
   box-shadow: #e6e6e6 0px 0px 0px 2px;
+}
+
+#epgOverlay {
+  display: block;
+  position: relative;
+  left: -20px;
+  padding: 20px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+#epgOverlay #epg {
+  margin-bottom: 0;
 }
 
 .epgPagination {
@@ -2908,6 +2914,9 @@ $break-xlarge: 1180px;*/
   #epgOverlay {
     padding-top: 0;
   }
+  #epgOverlay #epg {
+    margin: 0;
+  }
 
   .epgPagination {
     display: block;
@@ -3133,9 +3142,6 @@ $break-xlarge: 1180px;*/
   }
   .feed .mobMore a {
     width: 100%;
-  }
-  .feed ul {
-    width: 100% !important;
   }
   .feed ul li {
     margin-right: 0;

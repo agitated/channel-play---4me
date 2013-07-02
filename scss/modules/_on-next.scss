@@ -46,6 +46,9 @@
 
 .epgItemDark{
 	border-right:1px rgba(133,133,133,0.3) solid;
+	&:last-child{
+		border:none;
+	}
 
 	.epgTitle{
 		font-size:em(15px);
@@ -92,15 +95,7 @@
 	margin-top: $vSpace;
 }
 
-#epgOverlay{
-		display: block;
-		position: relative;
-		left:-20px;
-		padding:20px;
-	  overflow:hidden;
-	  background:rgba(0,0,0,0.3);
-		width:100%;
-}
+
 
 #epg{
 	//padding-bottom:30px;
@@ -127,6 +122,20 @@
 			}
 		}
 	}
+}
+
+#epgOverlay{
+		display: block;
+		position: relative;
+		left:-20px;
+		padding:20px;
+	  overflow:hidden;
+	  background:rgba(0,0,0,0.3);
+		width:100%;
+
+		#epg{
+			margin-bottom:0;
+		}
 }
 
 .epgPagination{

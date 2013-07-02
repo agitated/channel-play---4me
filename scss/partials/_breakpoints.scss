@@ -627,6 +627,9 @@ $break-xlarge: 1180px;*/
 	#epgOverlay
 	{
 		padding-top:0;
+		#epg{
+			margin:0;
+		}
 	}
 	.epgPagination{
 		display:block;
@@ -885,7 +888,7 @@ $break-xlarge: 1180px;*/
     }
 
 		ul{
-			width:100% !important;
+			//width:100% !important;
 			li{
         margin-right: 0;
         margin-left: 0;
