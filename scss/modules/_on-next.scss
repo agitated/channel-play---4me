@@ -44,7 +44,63 @@
 	}
 }
 
+.epgItemDark{
+	border-right:1px rgba(133,133,133,0.3) solid;
 
+	.epgTitle{
+		font-size:em(15px);
+		margin: 0;
+		padding:0;
+		color:$color-copy-epgTitle;
+	}
+
+	.epgDesc{
+		font-size:em(12px);
+		padding-right:10px;
+		color:#d9d9d9;
+	}
+
+	.epgStartTime{
+		display: block;
+		font-size:em(12px);
+		margin-bottom: 0;
+		color:$color-copy-menu;
+	}
+}
+
+
+.onNowContainer{
+	display:block;
+	position:relative;
+	left:0;
+}
+
+#epgDark{
+		display: block;
+		position: relative;
+	  overflow:hidden;
+}
+
+.epgDarkArrow{
+	height:em(20px);
+	width:200%;
+	background: url("../images/video_bottom_arrow.png") transparent no-repeat left 1px;
+	clear:both;
+	z-index:8;
+	position:relative;
+	left: em(-40px);
+	margin-top: $vSpace;
+}
+
+#epgOverlay{
+		display: block;
+		position: relative;
+		left:-20px;
+		padding:20px;
+	  overflow:hidden;
+	  background:rgba(0,0,0,0.3);
+		width:100%;
+}
 
 #epg{
 	//padding-bottom:30px;

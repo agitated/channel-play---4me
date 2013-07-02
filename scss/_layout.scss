@@ -18,6 +18,14 @@
 	background:$color-onNextbg;
 }
 
+.onNextDark{
+	display:block;
+	overflow: hidden;
+	padding: em(20px) em(15px) 0 ;
+	position: relative;
+	background: url("../images/video_info_bg.png") transparent repeat left top;
+}
+
 
 
 /* !-------ON DEMAND------- */
@@ -58,5 +66,5 @@ footer{
 	color:$color-copy-menu;
 	overflow: hidden;
 	background: url("../images/bg_footer.jpg") #000 no-repeat center top;
-	
+
 }

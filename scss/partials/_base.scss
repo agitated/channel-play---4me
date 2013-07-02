@@ -47,6 +47,7 @@ $color-modal-contentbg:#f8f7f7;
 $color-copy-link:$color-brand;
 $color-copy-breakcrumb:#fff;
 $color-copy-h2:#68b5f7;
+$color-copy-epgTitle:#68b5f7;
 $color-copy-socialHeader:#3085cc;
 $color-copy-default:#2a3a46;
 $color-copy-menu:#999fa5;
@@ -69,7 +70,7 @@ $smlThumbHeight:122px;
 $lrgThumbWidth:448px;
 $lrgThumbHeight:255px;
 $xsmlThumbWeight:$smlThumbWidth/2;
-$xsmlThumbHeight: $smlThumbHeight/2; 
+$xsmlThumbHeight: $smlThumbHeight/2;
 
 // Breakpoints for mixin
 $break-xsmall: 360px;

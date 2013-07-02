@@ -15,8 +15,8 @@
 	position: relative;
 	width: 80%;
 	margin:em(10px) auto em(30px);
-	
-	
+
+
 	.play{
 			display: none;
 			width:50px;
@@ -59,19 +59,19 @@
 	background: url("../images/video_info_bg.png") transparent repeat left top;
 	.breadCrumb{
 		margin-left:0;
-		margin-bottom: $hSpace;	
+		margin-bottom: $hSpace;
 	}
 	h1{
 		font:{
 			family: $headerFont;
 			size: em(30px);
 			weight:300;
-			
+
 		}
 		line-height: em(20px);
 		margin-bottom: em(5px);
 		color: #68b5f7;
-		display: block;	
+		display: block;
 	}
 	.buttons{
 		margin:0 ;
@@ -91,7 +91,7 @@
 		}
 		a{
 			color: $color-copy-light;
-		}	
+		}
 	}
 	.videoTools{
 		position: absolute;

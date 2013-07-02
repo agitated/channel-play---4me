@@ -701,6 +701,14 @@ fieldset .control-group {
   background: whitesmoke;
 }
 
+.onNextDark {
+  display: block;
+  overflow: hidden;
+  padding: 1.33333em 1em 0;
+  position: relative;
+  background: url("../images/video_info_bg.png") transparent repeat left top;
+}
+
 /* !-------ON DEMAND------- */
 .onDemand {
   display: block;
@@ -1691,6 +1699,60 @@ footer .footerSocial a {
   color: #999fa5;
 }
 
+.epgItemDark {
+  border-right: 1px rgba(133, 133, 133, 0.3) solid;
+}
+.epgItemDark .epgTitle {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  color: #68b5f7;
+}
+.epgItemDark .epgDesc {
+  font-size: 0.8em;
+  padding-right: 10px;
+  color: #d9d9d9;
+}
+.epgItemDark .epgStartTime {
+  display: block;
+  font-size: 0.8em;
+  margin-bottom: 0;
+  color: #999fa5;
+}
+
+.onNowContainer {
+  display: block;
+  position: relative;
+  left: 0;
+}
+
+#epgDark {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.epgDarkArrow {
+  height: 1.33333em;
+  width: 200%;
+  background: url("../images/video_bottom_arrow.png") transparent no-repeat left 1px;
+  clear: both;
+  z-index: 8;
+  position: relative;
+  left: -2.66667em;
+  margin-top: 1.33333em;
+}
+
+#epgOverlay {
+  display: block;
+  position: relative;
+  left: -20px;
+  padding: 20px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
 #epg {
   display: block;
   position: relative;
@@ -2658,6 +2720,22 @@ $break-xlarge: 1180px;*/
     padding: 0.66667em;
   }
 
+  .videoHome {
+    border: none;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+  }
+
+  .videoHome object, .videoHome .BrightcoveExperience, .videoSeries object, .videoSeries .BrightcoveExperience {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .categoryHeroBg {
     height: 116%;
     max-height: 116%;
@@ -2809,6 +2887,9 @@ $break-xlarge: 1180px;*/
     left: -50px;
   }
 
+  #epg {
+    padding: 0 10px;
+  }
   #epg .rightArrow {
     width: 45px;
     height: 90%;
@@ -2816,6 +2897,16 @@ $break-xlarge: 1180px;*/
   }
   #epg .rightArrow:hover {
     background: url("../images/mobile_feedcutoff.png") transparent no-repeat 0 50%;
+  }
+  #epg h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1.33333em;
+    font-weight: 300;
+    margin-bottom: 0;
+  }
+
+  #epgOverlay {
+    padding-top: 0;
   }
 
   .epgPagination {
@@ -2826,10 +2917,10 @@ $break-xlarge: 1180px;*/
   }
 
   .onNow {
+    display: block;
     width: 100%;
   }
   .onNow h2 {
-    margin-top: 1.33333em;
     font-size: 1.33333em;
     padding: 5px 10px;
     float: left;
@@ -2853,6 +2944,23 @@ $break-xlarge: 1180px;*/
     bottom: 10px;
     position: absolute;
     right: 10px;
+  }
+
+  .epgItemDark {
+    float: none;
+    clear: both;
+    border: none;
+    width: 100%;
+  }
+  .epgItemDark .epgDesc {
+    display: none;
+  }
+  .epgItemDark .epgStartTime {
+    display: inline-block;
+  }
+  .epgItemDark .epgTitle {
+    display: inline-block;
+    font-size: 0.86667em;
   }
 
   .seriesHeader {
@@ -2907,7 +3015,7 @@ $break-xlarge: 1180px;*/
     margin-bottom: 0;
   }
 
-  .videoHome, .videoWrapper, .menuItems, #searchMenu, #categories, .showCategories, .hideCategories, #menu, .videoSeries {
+  .heroHomeBg, .videoWrapper, .menuItems, #searchMenu, #categories, .showCategories, .hideCategories, #menu, .videoSeries {
     display: none !important;
   }
 
@@ -2930,10 +3038,6 @@ $break-xlarge: 1180px;*/
     display: block;
     width: 462px;
     margin: 0 auto;
-  }
-
-  #epg ul {
-    width: 1600px !important;
   }
 
   .results .button {

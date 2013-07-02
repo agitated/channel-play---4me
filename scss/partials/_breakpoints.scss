@@ -7,17 +7,17 @@ $break-xlarge: 1180px;*/
 
 
 /*   !----  $break-xlarge ----   */
-@include breakpoint(xlrg) 
+@include breakpoint(xlrg)
 {
 	.wrapper{
 		max-width: 1185px;
 		border-left:1px rgba( 0, 0, 0,0.1) solid;
 		border-right:1px rgba( 0, 0, 0,0.1) solid;
   		@include box-shadow(rgba( 0, 0, 0,0.1) 0px -1px 20px);
-  		@include box-sizing(border-box); 
+  		@include box-sizing(border-box);
   	}
 	.hero{
-		max-width: 100%;	
+		max-width: 100%;
 	}
 	.heroHomeBg,.heroSeriesBg{
 		height: 132%;
@@ -33,7 +33,7 @@ $break-xlarge: 1180px;*/
 	    max-width: none;
 	    width: auto;
 	}
-  
+
 	.heroVideoBg{
 		height: 102%;
 	    max-height: 102%;
@@ -101,12 +101,12 @@ $break-xlarge: 1180px;*/
 			}
 		}
 	}
-	
+
 	footer{
 		.channels{
 			width: 50%;
 			ul{
-				
+
 				li{
 					float: left;
 					margin-right: 4%;
@@ -118,12 +118,12 @@ $break-xlarge: 1180px;*/
 			display: none;
 		}
 	}
-	
-	
+
+
 }
 
-/*  !---- $break-large ---- */	
-@include breakpoint(lrg) 
+/*  !---- $break-large ---- */
+@include breakpoint(lrg)
 {
 	#menu{
 		@include border-radius(4px);
@@ -142,7 +142,7 @@ $break-xlarge: 1180px;*/
 	    right:-2%;
 		@include addBlur;
 	}
-	
+
 	.categoryHeroBg,{
 		height: 102%;
 	    max-height: 102%;
@@ -150,7 +150,7 @@ $break-xlarge: 1180px;*/
 	    width: auto;
 	}
 
-	
+
 	.heroVideoBg{
 		height: 102%;
 	    max-height: 102%;
@@ -165,7 +165,7 @@ $break-xlarge: 1180px;*/
 		height:360px;
 		}
 	}
-	
+
 	.onNow{
 		h3{
 			margin:em(5px) 0 em(7px)0 ;
@@ -188,7 +188,7 @@ $break-xlarge: 1180px;*/
     width:922px;
     margin:0 auto $vSpace;
   }
-  
+
 	.seriesInformation{
 		h3{
 			margin:em(5px) 0 em(7px)0 ;
@@ -215,8 +215,8 @@ $break-xlarge: 1180px;*/
 			background: url("../images/arrow_feedright.png") transparent no-repeat 0 50%;
 			&:hover{background: url("../images/arrow_feedright.png") transparent no-repeat -94px 50%;}
 	}
-	
-	
+
+
 	//Video page
 	.videoInformation{
 		.details{
@@ -228,11 +228,11 @@ $break-xlarge: 1180px;*/
 			}
 		}
 	}
-	
+
 }
 
 /*  !---- $break-med ---- */
-@include breakpoint(med) 
+@include breakpoint(med)
 {
 
 	#searchMenu{
@@ -261,15 +261,15 @@ $break-xlarge: 1180px;*/
 	    right:-2%;
 		@include addBlur;
 	}
-	
+
 	.categoryHeroBg,{
 		height: 100%;
 	    max-height: 100%;
 	    max-width: none;
 	    width: auto;
-	
+
 	}
-	
+
 	.heroVideoBg{
 		height: 102%;
 	    max-height: 102%;
@@ -278,11 +278,11 @@ $break-xlarge: 1180px;*/
 	    right:-2%;
 		@include addBlur;
 	}
-	
+
 	.heroArrow{
 		left: -40px;
 	}
-	
+
 	.onNow{
 		h3{
 			margin:em(5px) 0 em(5px)0 ;
@@ -304,7 +304,7 @@ $break-xlarge: 1180px;*/
 			display: none;
 		}
 	}
-	
+
 	.seriesInformation{
 		h1{
 			display: none;
@@ -349,22 +349,22 @@ $break-xlarge: 1180px;*/
 	.feed{
     width:692px;
     margin:0 auto $vSpace;
-    
+
     .accordian{
       display:block;
     }
-    
+
 		ul{
 			display:block;
 		}
 	}
-  
+
   .center{
     width:692px;
     margin:0 auto $vSpace;
   }
-	
-	.videoInformation {		
+
+	.videoInformation {
 		.details{
 			padding-right: em(180px);
 			min-height: em(120px);
@@ -401,10 +401,10 @@ $break-xlarge: 1180px;*/
 			display:block;
 		}
 	}
-} 
+}
 
 /*  !---- $break-small ---- */
-@include breakpoint(sml) 
+@include breakpoint(sml)
 {
 
 	.hero{
@@ -415,7 +415,7 @@ $break-xlarge: 1180px;*/
 	#mobileMenu{
 		display:block;
 	}
-	
+
 	#menu{
 		max-width:100%;
 		width:auto;
@@ -428,6 +428,25 @@ $break-xlarge: 1180px;*/
 			padding:em(10px);
 		}
 	}
+
+	.videoHome{
+		border:none;
+		width:100%;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+	}
+
+	.videoHome,.videoSeries{
+		object,.BrightcoveExperience{
+			position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+
+		}
+	}
+
 	.categoryHeroBg,{
 		height: 116%;
 	    max-height: 116%;
@@ -435,7 +454,7 @@ $break-xlarge: 1180px;*/
 	    width: auto;
 	    top:-45px;
 	}
-	
+
 	.heroVideoBg,.heroHomeBg,.heroSeriesBg{
 		height: 105%;
 	    max-height: 105%;
@@ -444,11 +463,11 @@ $break-xlarge: 1180px;*/
 	    right:-2%;
 	    @include removeBlur;
 	}
-	
+
 	.breadCrumb{
 		display: none;
 	}
-	
+
 	.categoryInformation{
 		padding-top: em(110px);
 		padding-left: $vSpace;
@@ -456,41 +475,41 @@ $break-xlarge: 1180px;*/
     p{
       margin-bottom:em(5px);
     }
-  
+
 	}
-	
+
 	.genericHeader{
 		.information{
 			width:100%;
 		}
 	}
-  
+
   .modal{
     width:90%;
-    
+
     fieldset,form{
-       @include box-sizing(border-box); 
+       @include box-sizing(border-box);
       width:100%;
       padding:em(5px);
     }
-    
+
     fieldset{
       .control-group{
         margin-bottom:em(10px);
       }
     }
-    
-    button{ 
+
+    button{
       width:100%;
       margin-bottom:em(10px);
     }
-    
+
     .buttonFacebook{
       width:100%;
       margin-bottom:em(10px);
       text-align:center;
     }
-   
+
     .header{
       padding:em(10px) em(10px) em(20px);
       background: url("../images/bg_header.jpg") transparent no-repeat -15px 87%;
@@ -506,9 +525,9 @@ $break-xlarge: 1180px;*/
         margin-bottom:em(15px);
         line-height:em(25px);
       }
-      
+
     }
-    
+
   }
 
   fieldset{
@@ -528,17 +547,17 @@ $break-xlarge: 1180px;*/
      .chzn-container{
        width:100% !important;
      }
-  
+
   }
-	
+
 	.heroCategoryArrow{
 		left: em(-30px);
 	}
-	
+
 	.breadCrumb{
 		display: none;
 	}
-	
+
 	.videoFull{
 		padding-top: 55%;
 		padding-bottom: 0;
@@ -551,7 +570,7 @@ $break-xlarge: 1180px;*/
 			display: inline-block;
 		}
 	}
-	
+
 	.videoInformation {
 		padding:0 em(15px);
 		clear: both;
@@ -561,7 +580,7 @@ $break-xlarge: 1180px;*/
 			p{
 				padding-right: em(10px);
 			}
-		}		
+		}
 		 .videoTools{
 			 float: none;
 			 margin-bottom: $vSpace;
@@ -574,7 +593,7 @@ $break-xlarge: 1180px;*/
        }
 		 }
 	}
-	
+
 	.videoInformationArrow{
 		left:em(-20px);
 		height: em(20px);
@@ -586,12 +605,28 @@ $break-xlarge: 1180px;*/
 		left:-50px;
 	}
 	#epg{
+		padding:0 10px;
 		.rightArrow{
 			width:45px;
 			height:90%;
+
 			background: url("../images/mobile_feedcutoff.png") transparent no-repeat 0 50% ;
 			&:hover{background: url("../images/mobile_feedcutoff.png") transparent no-repeat 0 50% ;}
 		}
+
+		h2{
+			font:{
+				family: $headerFont;
+				size: em(20px);
+				weight:300;
+			}
+			margin-bottom:0;
+		}
+	}
+
+	#epgOverlay
+	{
+		padding-top:0;
 	}
 	.epgPagination{
 		display:block;
@@ -599,9 +634,11 @@ $break-xlarge: 1180px;*/
 			left:45%;
 		}
 	}
+
 	.onNow{
+		display:block;
+
 		h2{
-			margin-top:$vSpace;
 			font-size: em(20px);
 			padding:5px 10px;
 			float: left;
@@ -628,7 +665,27 @@ $break-xlarge: 1180px;*/
 			right: 10px;
 		}
 	}
-	
+
+
+
+	.epgItemDark{
+		float:none;
+		clear:both;
+		border:none;
+		width:100%;
+		.epgDesc{
+			display:none;
+		}
+		.epgStartTime{
+			display:inline-block;
+
+		}
+		.epgTitle{
+			display:inline-block;
+			font-size:em(13px);
+		}
+	}
+
 	.seriesHeader{
 		padding-left: $hSpace;
 		background-position:left -120px;
@@ -641,7 +698,7 @@ $break-xlarge: 1180px;*/
 			}
 		}
 	}
-	
+
 	.seriesInformation{
 		h2{
 			margin-top:$vSpace;
@@ -671,7 +728,7 @@ $break-xlarge: 1180px;*/
 			right: 10px;
 		}
 	}
-	
+
 	.episodeList{
 		.moreButton{
 			display: none;
@@ -684,7 +741,7 @@ $break-xlarge: 1180px;*/
 			margin-bottom: 0;
 		}
 	}
-	.videoHome, .videoWrapper, .menuItems, #searchMenu, #categories,.showCategories, .hideCategories, #menu,.videoSeries{
+	 .heroHomeBg,.videoWrapper, .menuItems, #searchMenu, #categories,.showCategories, .hideCategories, #menu,.videoSeries{
 		display:none !important;
 	}
 
@@ -692,15 +749,15 @@ $break-xlarge: 1180px;*/
     display:block;
     width:462px;
     margin:0 auto;
-    
+
     .accordian{
       display:block;
     }
-    
+
 		.thumbTitle{
 			width:85%;
 		}
-    
+
 		ul{
 			display:block;
 		}
@@ -712,33 +769,29 @@ $break-xlarge: 1180px;*/
     margin:0 auto;
   }
 
-	#epg{
-		ul{
-			width:1600px !important;
-		}
-	}
+
 	.results{
 		.button{
 			text-align: center;
 			width:100%;
 		}
 	}
-	
-	
+
+
 	.lastFeed{
 		padding-bottom: em(5px);
 	}
 
-	
+
 	footer{
 		.section, .siteInfo{
 			display: none;
 		}
-		
-		
+
+
 		.mobInfo{
 			display: block;
-			
+
 			.button{
 				width: 47.55%;
 				float: none;
@@ -749,10 +802,10 @@ $break-xlarge: 1180px;*/
         }
 			}
 			.siteInfo{
-			
-				display: block;		
+
+				display: block;
 			}
-			
+
 			.footerSocial{
 				clear:both;
 				float: none;
@@ -764,12 +817,12 @@ $break-xlarge: 1180px;*/
 					}
 				}
 			}
-		}	
+		}
 	}
-} 
+}
 
 /*  !---- $break-xsmall---- */
-@include breakpoint(xsml) 
+@include breakpoint(xsml)
 {
 	.onNext{
 		padding: em(20px) em(10px) 0 ;
@@ -796,7 +849,7 @@ $break-xlarge: 1180px;*/
 			bottom:0;
 		}
 	}
-	.videoInformation {		
+	.videoInformation {
 		 .videoTools{
 		 div{
 			 float: left;
@@ -811,21 +864,21 @@ $break-xlarge: 1180px;*/
 		 }
 	}
 	.feed{
-		
+
 		margin:0;
     width:100%;
 		.leftArrow,.rightArrow{
 			display:none !important;
 		}
-    
+
     .accordian{
       display:none;
     }
-    
+
     .mobMore{
       display: block;
       margin:$hSpace;
-      @include box-sizing(border-box); 
+      @include box-sizing(border-box);
       a{
         width:100%;
       }
@@ -844,7 +897,7 @@ $break-xlarge: 1180px;*/
         }
       }
 		}
-		
+
 		.showFeed{
 			display:block;
       border-top:2px $color-divider solid;
@@ -862,11 +915,11 @@ $break-xlarge: 1180px;*/
 			}
 		}
 	}
-  
+
   .center{
     width:100%;
   }
-  
+
 	.colSml{
 		width:100%;
 	}
@@ -877,7 +930,7 @@ $break-xlarge: 1180px;*/
 		width:100%;
 		height: auto !important;
 		overflow: hidden;
-  
+
     .play{
       opacity:1;
       filter:alpha(opacity=100); /* For IE8 and earlier */
@@ -885,9 +938,9 @@ $break-xlarge: 1180px;*/
       	background: url("../images/sprite_icons.png") $color-button-icon no-repeat 2px -170px;
       	border: $color-button-border 2px solid;
       };
-      
+
     }
-  
+
     &:hover{
     	border:2px #fff solid;
     	@include box-shadow($color-boxshaddow 0px 0px 0px 2px);
@@ -908,7 +961,7 @@ $break-xlarge: 1180px;*/
 			width:$smlThumbWidth;
 		}
 	}
-	
+
 	.epgPagination{
 		display:block;
 		ul{
@@ -927,7 +980,7 @@ $break-xlarge: 1180px;*/
 		}
 
 	}
-	
+
 	.seriesInformation{
 		h3{
 			margin-bottom:0;
@@ -970,7 +1023,7 @@ $break-xlarge: 1180px;*/
 			padding:0 $hSpace;
 		}
 	}
-  
+
 	.content{
 		img{
 			width:100%;
@@ -978,7 +1031,7 @@ $break-xlarge: 1180px;*/
 			height:auto;
 		}
 	}
-  
+
   .slider{
    	overflow: visible;
   }
@@ -986,7 +1039,7 @@ $break-xlarge: 1180px;*/
   #searchResults{
     border:none;
   }
-	
+
 	.footerSocial{
 		clear:both;
 		float: none;
@@ -1012,7 +1065,7 @@ $break-xlarge: 1180px;*/
 }
 
 /*  !---- $break-xsmall---- */
-@include breakpoint(xxsml) 
+@include breakpoint(xxsml)
 {
 	.onNow{
 		h3{
@@ -1030,7 +1083,7 @@ $break-xlarge: 1180px;*/
 	}
 	footer{
 		padding:0 $hSpace $hSpace;
-		
+
 		.mobInfo{
 			.button{
 				width:83%;
